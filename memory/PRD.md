@@ -39,3 +39,13 @@ Login = Nama Karyawan (username) + NIK (password), divalidasi ke sheet Data Kary
 ## Notes
 - Ada 2 baris uji berlabel "TEST APP" di sheet (1 Hazard, 1 Inspeksi) — bisa dihapus manual.
 - Web/PC: aplikasi berjalan di browser via link preview; setelah Publish tersedia link produksi.
+
+## Redesign 2026-09 — Match Zite web apps (inspection-gts.zite.so & sap-hazardreport.zite.so)
+- Font diganti ke **Plus Jakarta Sans** (Regular/Medium/SemiBold/Bold/ExtraBold) menggantikan Archivo/IBM Plex.
+- Tema baru: **dark-first + toggle terang** (persist via AsyncStorage, store eksternal di src/theme.ts), aksen **merah #FF3B30**, gaya modern rounded (radii tokens) menggantikan brutalist oranye.
+- Komponen bersama (ui.tsx) dirombak: tombol/chip/field/segmented/badge rounded & soft.
+- Layar **Beranda/cover** dibangun ulang mengikuti Zite: header + logo GTS + live clock (WIT) + theme toggle, hero image + badge "Digital Safety Management Platform" + judul "OHS & Training" (aksen merah) + chip fitur (Auto PDF/Email Notif/Real-time), quote berputar (auto 6s), 3 kartu menu, marquee tips keselamatan (src/components/Marquee.tsx), footer.
+- Login dirombak ke gaya cover Zite (dark hero, badge, "Safety Portal", input rounded ber-ikon).
+- Layar Hazard/Inspeksi/Dashboard otomatis mewarisi tema baru via token.
+- BELUM (backlog lanjutan): parity penuh 18+ formulir inspeksi, workflow approval/close tulis-balik ke sheet, dan Email Notif (butuh provider email + kredensial — DITUNDA).
+

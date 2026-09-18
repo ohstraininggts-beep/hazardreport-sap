@@ -1,104 +1,155 @@
-// Design tokens for GTS Safety Portal — "5 Brutalist Mobile" personality.
-// Light + Dark themes. Keys mirror the `color` block of design_guidelines.json.
-import { useMemo } from "react";
-import { Appearance, StyleSheet, useColorScheme } from "react-native";
+// Design tokens for GTS Safety Portal — matched to the Zite web apps
+// (inspection-gts.zite.so & sap-hazardreport.zite.so).
+// Modern rounded UI · Plus Jakarta Sans · dark-first with manual light toggle.
+import { useMemo, useSyncExternalStore } from "react";
+import { StyleSheet, useColorScheme } from "react-native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export type ColorScheme = "light" | "dark";
+export type ThemePref = "light" | "dark" | "system";
 
 const light = {
   surface: "#FFFFFF",
-  onSurface: "#111111",
-  surfaceSecondary: "#F5F5F5",
-  onSurfaceSecondary: "#111111",
-  surfaceTertiary: "#EAEAEA",
-  onSurfaceTertiary: "#111111",
-  surfaceInverse: "#111111",
-  onSurfaceInverse: "#F5F5F5",
-  muted: "#757575",
+  onSurface: "#15151B",
+  surfaceSecondary: "#F5F5F8",
+  onSurfaceSecondary: "#15151B",
+  surfaceTertiary: "#ECECF1",
+  onSurfaceTertiary: "#15151B",
+  surfaceInverse: "#15151B",
+  onSurfaceInverse: "#FFFFFF",
+  muted: "#71717A",
 
-  brand: "#F25C05",
+  brand: "#FF3B30",
   onBrand: "#FFFFFF",
-  brandPrimary: "#F25C05",
+  brandPrimary: "#FF3B30",
   onBrandPrimary: "#FFFFFF",
-  brandSecondary: "#D14D02",
+  brandSecondary: "#E11D2E",
   onBrandSecondary: "#FFFFFF",
-  brandTertiary: "#FFDBC7",
-  onBrandTertiary: "#8A3300",
+  brandTertiary: "#FFE4E1",
+  onBrandTertiary: "#8A1A12",
 
-  success: "#008A27",
+  success: "#16A34A",
   onSuccess: "#FFFFFF",
-  warning: "#D99000",
-  onWarning: "#111111",
-  error: "#D30000",
+  warning: "#D97706",
+  onWarning: "#FFFFFF",
+  error: "#DC2626",
   onError: "#FFFFFF",
-  info: "#4A5568",
+  info: "#2563EB",
   onInfo: "#FFFFFF",
 
-  border: "#111111",
-  borderStrong: "#111111",
-  divider: "#EAEAEA",
+  border: "#E4E4EA",
+  borderStrong: "#CACAD2",
+  divider: "#EEEEF2",
 };
 
 export type ThemeColors = typeof light;
 
 const dark: ThemeColors = {
-  surface: "#111111",
-  onSurface: "#F5F5F5",
-  surfaceSecondary: "#1F1F1F",
-  onSurfaceSecondary: "#F5F5F5",
-  surfaceTertiary: "#2D2D2D",
-  onSurfaceTertiary: "#F5F5F5",
-  surfaceInverse: "#F5F5F5",
-  onSurfaceInverse: "#111111",
-  muted: "#9E9E9E",
+  surface: "#0B0B0F",
+  onSurface: "#F4F4F7",
+  surfaceSecondary: "#17171D",
+  onSurfaceSecondary: "#F4F4F7",
+  surfaceTertiary: "#22222A",
+  onSurfaceTertiary: "#F4F4F7",
+  surfaceInverse: "#F4F4F7",
+  onSurfaceInverse: "#0B0B0F",
+  muted: "#8E8E9A",
 
-  brand: "#F25C05",
+  brand: "#FF3B30",
   onBrand: "#FFFFFF",
-  brandPrimary: "#F25C05",
+  brandPrimary: "#FF3B30",
   onBrandPrimary: "#FFFFFF",
-  brandSecondary: "#FF7A29",
-  onBrandSecondary: "#111111",
-  brandTertiary: "#451900",
-  onBrandTertiary: "#FFDBC7",
+  brandSecondary: "#FF6B5E",
+  onBrandSecondary: "#0B0B0F",
+  brandTertiary: "#3A1512",
+  onBrandTertiary: "#FFC9C4",
 
-  success: "#00B233",
-  onSuccess: "#111111",
-  warning: "#FFB219",
+  success: "#22C55E",
+  onSuccess: "#FFFFFF",
+  warning: "#F59E0B",
   onWarning: "#111111",
-  error: "#FF3333",
-  onError: "#111111",
-  info: "#718096",
-  onInfo: "#111111",
+  error: "#EF4444",
+  onError: "#FFFFFF",
+  info: "#3B82F6",
+  onInfo: "#FFFFFF",
 
-  border: "#333333",
-  borderStrong: "#F5F5F5",
-  divider: "#2D2D2D",
+  border: "#26262E",
+  borderStrong: "#3A3A44",
+  divider: "#1E1E25",
 };
 
-export const defaultScheme = "light" satisfies ColorScheme;
-export const themes: { light: ThemeColors; dark?: ThemeColors } = { light, dark };
+export const themes: { light: ThemeColors; dark: ThemeColors } = { light, dark };
 
 // Typography families (loaded via expo-font in app/_layout.tsx)
 export const fonts = {
-  display: "Archivo",
-  displayBold: "Archivo",
-  body: "IBMPlexSans",
-  mono: "IBMPlexMono",
-  monoBold: "IBMPlexMonoSemiBold",
+  display: "PlusJakartaExtraBold",
+  displayBold: "PlusJakartaExtraBold",
+  heading: "PlusJakartaBold",
+  body: "PlusJakartaRegular",
+  medium: "PlusJakartaMedium",
+  semibold: "PlusJakartaSemiBold",
+  // legacy aliases kept so existing screens keep working
+  mono: "PlusJakartaSemiBold",
+  monoBold: "PlusJakartaBold",
 };
 
 export const spacing = { xs: 4, sm: 8, md: 12, lg: 16, xl: 24, "2xl": 32, "3xl": 48 };
+export const radii = { sm: 10, md: 14, lg: 18, xl: 24, "2xl": 28, pill: 999 };
 
-export function setColorScheme(scheme: ColorScheme | null) {
-  Appearance.setColorScheme?.(scheme ?? "unspecified");
+// ---------------------------------------------------------------------------
+// Manual theme preference store (dark-first) with AsyncStorage persistence.
+// Uses an external store so every useTheme() consumer re-renders on toggle
+// without needing a Provider wrapper.
+// ---------------------------------------------------------------------------
+const PREF_KEY = "gts_theme_pref";
+let _pref: ThemePref = "dark";
+const _listeners = new Set<() => void>();
+
+function _emit() {
+  _listeners.forEach((l) => l());
 }
 
-setColorScheme?.(themes.dark ? null : defaultScheme);
+function subscribe(cb: () => void) {
+  _listeners.add(cb);
+  return () => _listeners.delete(cb);
+}
 
-export function useTheme(): { scheme: ColorScheme; colors: ThemeColors } {
+function getSnapshot(): ThemePref {
+  return _pref;
+}
+
+export function setThemePref(pref: ThemePref) {
+  _pref = pref;
+  _emit();
+  AsyncStorage.setItem(PREF_KEY, pref).catch(() => {});
+}
+
+export function toggleTheme(current: ColorScheme) {
+  setThemePref(current === "dark" ? "light" : "dark");
+}
+
+// Load persisted preference on startup.
+(async () => {
+  try {
+    const v = (await AsyncStorage.getItem(PREF_KEY)) as ThemePref | null;
+    if (v === "light" || v === "dark" || v === "system") {
+      _pref = v;
+      _emit();
+    }
+  } catch {
+    // ignore
+  }
+})();
+
+export function useThemePref(): ThemePref {
+  return useSyncExternalStore(subscribe, getSnapshot, getSnapshot);
+}
+
+export function useTheme(): { scheme: ColorScheme; colors: ThemeColors; pref: ThemePref } {
+  const pref = useThemePref();
   const system = useColorScheme();
-  const scheme: ColorScheme = system && themes[system] ? system : defaultScheme;
-  return { scheme, colors: themes[scheme] ?? themes.light };
+  const scheme: ColorScheme = pref === "system" ? (system ?? "dark") : pref;
+  return { scheme, colors: themes[scheme], pref };
 }
 
 export function makeStyles<T extends StyleSheet.NamedStyles<T> | StyleSheet.NamedStyles<any>>(

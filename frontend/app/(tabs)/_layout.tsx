@@ -40,12 +40,12 @@ export default function TabsLayout() {
         tabBarInactiveTintColor: colors.muted,
         tabBarStyle: {
           backgroundColor: colors.surface,
-          borderTopWidth: 1.5,
-          borderTopColor: colors.border,
+          borderTopWidth: 1,
+          borderTopColor: colors.divider,
           ...(Platform.OS === "web" ? { height: 64 } : {}),
         },
         tabBarItemStyle: { alignSelf: "center" },
-        tabBarLabelStyle: { fontFamily: fonts.monoBold, fontSize: 10, textTransform: "uppercase", letterSpacing: 0.4 },
+        tabBarLabelStyle: { fontFamily: fonts.semibold, fontSize: 10.5, letterSpacing: 0.2 },
       }}
     >
       <Tabs.Screen
