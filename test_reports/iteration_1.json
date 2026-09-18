@@ -4,7 +4,7 @@
     "critical": [
       {
         "endpoint": "POST /api/upload",
-        "issue": "Response 'url' has no scheme/host (returns '/api/files/...' instead of absolute URL) because EXPO_PUBLIC_BACKEND_URL is NOT set in /app/backend/.env. server.py:523: backend = os.environ.get('EXPO_PUBLIC_BACKEND_URL', ''). This means <Image source={{uri: res.url}} /> in the app may fail to load the just-uploaded photo. Fix: add EXPO_PUBLIC_BACKEND_URL=https://gts-inspection-sys.preview.emergentagent.com to /app/backend/.env and restart backend, OR construct the absolute URL from the incoming Request in FastAPI (str(request.base_url)).",
+        "issue": "Response 'url' has no scheme/host (returns '/api/files/...' instead of absolute URL) because EXPO_PUBLIC_BACKEND_URL is NOT set in /app/backend/.env. server.py:523: backend = os.environ.get('EXPO_PUBLIC_BACKEND_URL', ''). This means <Image source={{uri: res.url}} /> in the app may fail to load the just-uploaded photo. Fix: add EXPO_PUBLIC_BACKEND_URL=https://hazard-reporter-3.preview.emergentagent.com to /app/backend/.env and restart backend, OR construct the absolute URL from the incoming Request in FastAPI (str(request.base_url)).",
         "priority": "HIGH"
       }
     ],
@@ -45,5 +45,5 @@
   "retest_needed": true,
   "should_main_agent_self_test": true,
   "context_for_next_testing_agent": "Login: Habel Lolopayung / M0303250220. Read endpoints work via public CSV (no creds). Write endpoints (POST /api/hazards, POST /api/inspections) intentionally return 503 until GOOGLE_SERVICE_ACCOUNT_JSON is set — this is EXPECTED and covered by tests. /api/upload works via Emergent Object Storage but returns a relative URL because EXPO_PUBLIC_BACKEND_URL missing in backend/.env.",
-  "rca_of_issue": "Upload URL missing scheme: backend/server.py reads EXPO_PUBLIC_BACKEND_URL from backend env, but only frontend/.env has that key. When empty, the returned 'url' becomes '/api/files/<path>?token=...' (relative), which fails when opened outside the app origin (e.g. requests library, or if Image resolver doesn't prefix). Reproduction: POST multipart to /api/upload with Bearer token → response.url starts with '/api'. Fix: add EXPO_PUBLIC_BACKEND_URL=https://gts-inspection-sys.preview.emergentagent.com to /app/backend/.env and `sudo supervisorctl restart backend`."
+  "rca_of_issue": "Upload URL missing scheme: backend/server.py reads EXPO_PUBLIC_BACKEND_URL from backend env, but only frontend/.env has that key. When empty, the returned 'url' becomes '/api/files/<path>?token=...' (relative), which fails when opened outside the app origin (e.g. requests library, or if Image resolver doesn't prefix). Reproduction: POST multipart to /api/upload with Bearer token → response.url starts with '/api'. Fix: add EXPO_PUBLIC_BACKEND_URL=https://hazard-reporter-3.preview.emergentagent.com to /app/backend/.env and `sudo supervisorctl restart backend`."
 }

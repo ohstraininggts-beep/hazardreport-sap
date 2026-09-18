@@ -6,7 +6,7 @@ from pathlib import Path
 
 load_dotenv(Path(__file__).resolve().parents[1] / ".env")
 
-BASE_URL = os.environ.get("EXPO_PUBLIC_BACKEND_URL", "https://gts-inspection-sys.preview.emergentagent.com").rstrip("/")
+BASE_URL = os.environ.get("EXPO_PUBLIC_BACKEND_URL", "https://hazard-reporter-3.preview.emergentagent.com").rstrip("/")
 TEST_USER = ("Habel Lolopayung", "M0303250220")
 
 
