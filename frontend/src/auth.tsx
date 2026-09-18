@@ -8,12 +8,16 @@ export type User = {
   jabatan: string;
   departemen: string;
   pt?: string;
+  is_admin?: boolean;
+  is_approver?: boolean;
+  approver_dept?: string;
+  ttd_link?: string;
 };
 
 type AuthState = {
   user: User | null;
   loading: boolean;
-  login: (username: string, password: string) => Promise<void>;
+  login: (nik: string) => Promise<void>;
   logout: () => Promise<void>;
 };
 
@@ -38,8 +42,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     })();
   }, []);
 
-  const login = useCallback(async (username: string, password: string) => {
-    const res = await api.login(username, password);
+  const login = useCallback(async (nik: string) => {
+    const res = await api.login(nik);
     await storage.secureSet(TOKEN_KEY, res.token);
     setUser(res.user);
   }, []);

@@ -11,7 +11,10 @@ Bangun aplikasi mobile yang menyerupai sistem & tampilan dua web app (inspection
 - **Sheets used**: Hazard Report (gid 1004364146), Inspection Log (gid 1410632592), Data Karyawan (gid 1707709803, untuk login).
 
 ## Auth
-Login = Nama Karyawan (username) + NIK (password), divalidasi ke sheet Data Karyawan. JWT 30 hari disimpan via secure storage.
+Login = **NIK saja** (tanpa password). Field login menampilkan NIK Karyawan.
+- `adminmaster-ohst` = akun admin master (akses semua menu + semua rekap approval).
+- Approver = NIK yang terdaftar di sheet **"Tanda Tangan Atasan"** (gid 1513031282) → menu Approval terbuka, ter-scope ke departemennya. Selain itu tidak.
+JWT 30 hari via secure storage.
 
 ## Core Requirements (static)
 1. Modul Hazard Report: list + filter (status/resiko) + search + detail + buat baru (+foto Sebelum wajib/Sesudah) → tulis ke sheet.

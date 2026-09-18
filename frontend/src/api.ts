@@ -31,8 +31,8 @@ async function req(path: string, options: RequestInit = {}) {
 
 export const api = {
   base: BASE,
-  login: (username: string, password: string) =>
-    req("/auth/login", { method: "POST", body: JSON.stringify({ username, password }) }),
+  login: (username: string) =>
+    req("/auth/login", { method: "POST", body: JSON.stringify({ username }) }),
   me: () => req("/auth/me"),
   hazards: (qs = "") => req(`/hazards${qs}`),
   hazard: (id: number) => req(`/hazards/${id}`),
@@ -42,6 +42,8 @@ export const api = {
   inspection: (id: number) => req(`/inspections/${id}`),
   inspectionStats: () => req("/inspections/stats"),
   createInspection: (body: any) => req("/inspections", { method: "POST", body: JSON.stringify(body) }),
+  approvals: (qs = "") => req(`/approvals${qs}`),
+  approveInspection: (id: number, status = "Approved") => req(`/inspections/${id}/approve`, { method: "POST", body: JSON.stringify({ status }) }),
   options: () => req("/meta/options"),
   uploadUrl: `${BASE}/api/upload`,
 };

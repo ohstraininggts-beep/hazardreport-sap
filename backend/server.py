@@ -42,7 +42,11 @@ def now_wib():
 # ---------------------------------------------------------------------------
 class LoginBody(BaseModel):
     username: str
-    password: str
+    password: str = ""  # ignored — login is by NIK only now
+
+
+APPROVER_GID = 1513031282  # sheet "Tanda Tangan Atasan"
+ADMIN_USERNAME = "adminmaster-ohst"
 
 
 def make_token(user: dict) -> str:
@@ -64,19 +68,17 @@ async def current_user(authorization: Optional[str] = Header(None)) -> dict:
         raise HTTPException(401, "Invalid token")
 
 
-def _find_employee(username: str, password: str):
+def _find_employee_by_nik(nik: str):
     rows = sheets.get_rows(sheets.EMPLOYEE_GID)
-    uname = username.strip().lower()
-    pwd = password.strip()
+    target = nik.strip().lower()
     for r in rows[1:]:
         if len(r) < 5:
             continue
-        nik = (r[1] or "").strip()
-        nama = (r[2] or "").strip()
-        if nama.lower() == uname and nik and nik.lower() == pwd.lower():
+        rnik = (r[1] or "").strip()
+        if rnik and rnik.lower() == target:
             return {
-                "nik": nik,
-                "nama": nama,
+                "nik": rnik,
+                "nama": (r[2] or "").strip(),
                 "jabatan": (r[3] or "").strip(),
                 "departemen": (r[4] or "").strip(),
                 "pt": (r[6].strip() if len(r) > 6 else ""),
@@ -84,18 +86,61 @@ def _find_employee(username: str, password: str):
     return None
 
 
+def _load_approvers():
+    """Map NIK(lower) -> approver info from 'Tanda Tangan Atasan' sheet."""
+    rows = sheets.get_rows(APPROVER_GID)
+    out = {}
+    for r in rows[1:]:
+        if len(r) < 4:
+            continue
+        nik = (r[0] or "").strip()
+        if not nik:
+            continue
+        out[nik.lower()] = {
+            "nik": nik,
+            "nama": (r[1] or "").strip(),
+            "position": (r[2] or "").strip(),
+            "departemen": (r[3] or "").strip(),
+            "ttd_link": (r[5].strip() if len(r) > 5 else ""),
+        }
+    return out
+
+
 @api.post("/auth/login")
 async def login(body: LoginBody):
-    emp = await run_in_threadpool(_find_employee, body.username, body.password)
+    ident = (body.username or "").strip()
+    if not ident:
+        raise HTTPException(401, "NIK wajib diisi")
+    # Admin master account
+    if ident.lower() == ADMIN_USERNAME:
+        user = {
+            "nik": ADMIN_USERNAME,
+            "nama": "Admin Master OHS&T",
+            "jabatan": "Administrator",
+            "departemen": "",
+            "pt": "",
+            "is_admin": True,
+            "is_approver": True,
+            "approver_dept": "ALL",
+        }
+        return {"token": make_token(user), "user": user}
+    # Normal employee login by NIK
+    emp = await run_in_threadpool(_find_employee_by_nik, ident)
     if not emp:
-        raise HTTPException(401, "Nama Karyawan atau NIK tidak ditemukan")
-    token = make_token(emp)
-    return {"token": token, "user": emp}
+        raise HTTPException(401, "NIK Karyawan tidak ditemukan")
+    approvers = await run_in_threadpool(_load_approvers)
+    ap = approvers.get(emp["nik"].lower())
+    emp["is_admin"] = False
+    emp["is_approver"] = bool(ap)
+    emp["approver_dept"] = (ap["departemen"] if ap else "")
+    emp["ttd_link"] = (ap["ttd_link"] if ap else "")
+    return {"token": make_token(emp), "user": emp}
 
 
 @api.get("/auth/me")
 async def me(user: dict = Depends(current_user)):
-    return {k: user[k] for k in ("nik", "nama", "jabatan", "departemen", "pt") if k in user}
+    keys = ("nik", "nama", "jabatan", "departemen", "pt", "is_admin", "is_approver", "approver_dept", "ttd_link")
+    return {k: user[k] for k in keys if k in user}
 
 
 # ----- Monitoring auth (Superintendent / Manager / Head Dept) -----
@@ -574,12 +619,31 @@ async def create_inspection(body: InspectionCreate, user: dict = Depends(current
     return {"ok": True}
 
 
+@api.get("/approvals")
+async def list_approvals(status: Optional[str] = "Pending", user: dict = Depends(current_user)):
+    if not (user.get("is_approver") or user.get("is_admin")):
+        raise HTTPException(403, "Anda tidak memiliki akses approval")
+    items = await run_in_threadpool(_load_inspections)
+    if not user.get("is_admin"):
+        dept = (user.get("approver_dept") or user.get("departemen") or "").strip()
+        if dept and dept != "ALL":
+            items = [x for x in items if x.get("departemen") == dept]
+    if status:
+        items = [x for x in items if x["status"].lower() == status.lower()]
+    light = [{k: x[k] for k in x if k not in ("columns", "rows", "form")} for x in items]
+    for y, x in zip(light, items):
+        y["row_count"] = x.get("item_count", 0)
+    return {"total": len(light), "scope": ("Semua Departemen" if user.get("is_admin") else (user.get("approver_dept") or user.get("departemen"))), "items": light}
+
+
 class ApproveBody(BaseModel):
     status: str = "Approved"
 
 
 @api.post("/inspections/{row_id}/approve")
 async def approve_inspection(row_id: int, body: ApproveBody, user: dict = Depends(current_user)):
+    if not (user.get("is_approver") or user.get("is_admin")):
+        raise HTTPException(403, "Anda tidak memiliki akses approval")
     if not sheets.writes_enabled():
         raise HTTPException(503, "Google Sheets belum terhubung.")
     now = now_wib()

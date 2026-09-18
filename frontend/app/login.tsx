@@ -4,7 +4,7 @@ import { Image } from "expo-image";
 import { useRouter } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { LinearGradient } from "expo-linear-gradient";
-import { Lightning, ShieldWarning, User, IdentificationCard } from "phosphor-react-native";
+import { Lightning, ShieldWarning, IdentificationCard } from "phosphor-react-native";
 import { useAuth } from "@/src/auth";
 import { makeStyles, useTheme, fonts, radii } from "@/src/theme";
 import { PrimaryButton } from "@/src/ui";
@@ -17,20 +17,19 @@ export default function Login() {
   const insets = useSafeAreaInsets();
   const router = useRouter();
   const { login } = useAuth();
-  const [nama, setNama] = useState("");
   const [nik, setNik] = useState("");
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
 
   const onSubmit = async () => {
-    if (!nama.trim() || !nik.trim()) {
-      setError("Nama Karyawan dan NIK wajib diisi.");
+    if (!nik.trim()) {
+      setError("NIK wajib diisi.");
       return;
     }
     setBusy(true);
     setError("");
     try {
-      await login(nama.trim(), nik.trim());
+      await login(nik.trim());
       router.replace("/(tabs)");
     } catch (e: any) {
       setError(e?.message || "Gagal masuk.");
@@ -69,30 +68,18 @@ export default function Login() {
             </View>
 
             <View style={styles.card}>
-              <Text style={styles.fieldLabel}>Nama Karyawan</Text>
-              <View style={styles.inputWrap}>
-                <User size={18} color={colors.muted} weight="bold" />
-                <TextInput
-                  testID="login-username-input"
-                  value={nama}
-                  onChangeText={setNama}
-                  placeholder="Nama lengkap sesuai data"
-                  placeholderTextColor={colors.muted}
-                  autoCapitalize="words"
-                  style={styles.input}
-                />
-              </View>
-
-              <Text style={[styles.fieldLabel, { marginTop: 14 }]}>NIK (Password)</Text>
+              <Text style={styles.fieldLabel}>NIK Karyawan</Text>
               <View style={styles.inputWrap}>
                 <IdentificationCard size={18} color={colors.muted} weight="bold" />
                 <TextInput
-                  testID="login-password-input"
+                  testID="login-username-input"
                   value={nik}
                   onChangeText={setNik}
-                  placeholder="Masukkan NIK"
+                  placeholder="Masukkan NIK Anda"
                   placeholderTextColor={colors.muted}
                   autoCapitalize="characters"
+                  autoCorrect={false}
+                  onSubmitEditing={onSubmit}
                   style={styles.input}
                 />
               </View>
@@ -107,6 +94,7 @@ export default function Login() {
               <View style={{ marginTop: 18 }}>
                 <PrimaryButton testID="login-submit-button" label={busy ? "Memproses..." : "Masuk"} onPress={onSubmit} loading={busy} />
               </View>
+              <Text style={styles.hint}>Gunakan NIK karyawan Anda untuk masuk.</Text>
             </View>
 
             <Text style={styles.footer}>© 2026 PT. Gane Tambang Sentosa — Safety First</Text>
@@ -138,5 +126,6 @@ const useStyles = makeStyles((c) => ({
   input: { flex: 1, color: c.onSurface, fontFamily: fonts.body, fontSize: 15, paddingVertical: 0 },
   errorBox: { flexDirection: "row", alignItems: "center", gap: 8, backgroundColor: c.error, padding: 12, marginTop: 14, borderRadius: radii.md },
   errorText: { color: c.onError, fontFamily: fonts.medium, fontSize: 13, flex: 1 },
+  hint: { color: c.muted, fontFamily: fonts.body, fontSize: 11.5, textAlign: "center", marginTop: 12 },
   footer: { color: "rgba(255,255,255,0.6)", fontFamily: fonts.medium, fontSize: 11, textAlign: "center" },
 }));

@@ -17,6 +17,7 @@ import {
   FilePdf,
   EnvelopeSimple,
   Broadcast,
+  SealCheck,
 } from "phosphor-react-native";
 import { useAuth } from "@/src/auth";
 import { makeStyles, useTheme, fonts, radii, toggleTheme } from "@/src/theme";
@@ -55,7 +56,7 @@ export default function Beranda() {
   const { colors, scheme } = useTheme();
   const insets = useSafeAreaInsets();
   const router = useRouter();
-  const { logout } = useAuth();
+  const { user, logout } = useAuth();
   const { date, time } = useClock();
 
   const [qi, setQi] = useState(0);
@@ -65,15 +66,17 @@ export default function Beranda() {
   }, []);
   const quote = QUOTES[qi];
 
-  const modules = useMemo(
-    () =>
-      [
-        { key: "hazard", title: "Hazard Report", desc: "Pelaporan bahaya & kondisi tidak aman", icon: Warning, route: "/(tabs)/hazard", color: colors.brandPrimary },
-        { key: "inspeksi", title: "Inspeksi", desc: "Formulir & log inspeksi keselamatan", icon: ClipboardText, route: "/(tabs)/inspeksi", color: colors.info },
-        { key: "dashboard", title: "Dashboard", desc: "Overview, statistik & monitoring", icon: ChartBar, route: "/(tabs)/dashboard", color: colors.success },
-      ] as const,
-    [colors],
-  );
+  const modules = useMemo(() => {
+    const base: any[] = [
+      { key: "hazard", title: "Hazard Report", desc: "Pelaporan bahaya & kondisi tidak aman", icon: Warning, route: "/(tabs)/hazard", color: colors.brandPrimary },
+      { key: "inspeksi", title: "Inspeksi", desc: "Formulir & log inspeksi keselamatan", icon: ClipboardText, route: "/(tabs)/inspeksi", color: colors.info },
+      { key: "dashboard", title: "Dashboard", desc: "Overview, statistik & monitoring", icon: ChartBar, route: "/(tabs)/dashboard", color: colors.success },
+    ];
+    if (user?.is_approver || user?.is_admin) {
+      base.splice(2, 0, { key: "approval", title: "Approval Inspeksi", desc: user?.is_admin ? "Approve semua departemen (Master)" : "Approve inspeksi departemen Anda", icon: SealCheck, route: "/approval", color: colors.warning });
+    }
+    return base;
+  }, [colors, user]);
 
   const features = [
     { icon: FilePdf, label: "Auto PDF" },
