@@ -1,0 +1,200 @@
+{
+  "app_name": "GTS Safety Portal",
+  "personality": "5 Brutalist Mobile",
+  "personality_one_liner": "A high-contrast, structural, and tactical command center built for extreme outdoor visibility and uncompromised operational clarity.",
+  "color": {
+    "surface": "#FFFFFF",
+    "onSurface": "#111111",
+    "surfaceSecondary": "#F5F5F5",
+    "onSurfaceSecondary": "#111111",
+    "surfaceTertiary": "#EAEAEA",
+    "onSurfaceTertiary": "#111111",
+    "surfaceInverse": "#111111",
+    "onSurfaceInverse": "#F5F5F5",
+    "brand": "#F25C05",
+    "onBrand": "#FFFFFF",
+    "brandPrimary": "#F25C05",
+    "onBrandPrimary": "#FFFFFF",
+    "brandSecondary": "#D14D02",
+    "onBrandSecondary": "#FFFFFF",
+    "brandTertiary": "#FFDBC7",
+    "onBrandTertiary": "#8A3300",
+    "success": "#008A27",
+    "onSuccess": "#FFFFFF",
+    "warning": "#D99000",
+    "onWarning": "#111111",
+    "error": "#D30000",
+    "onError": "#FFFFFF",
+    "info": "#4A5568",
+    "onInfo": "#FFFFFF",
+    "border": "#111111",
+    "borderStrong": "#111111",
+    "divider": "#EAEAEA",
+    "muted": "#757575",
+    "dark": {
+      "surface": "#111111",
+      "onSurface": "#F5F5F5",
+      "surfaceSecondary": "#1F1F1F",
+      "onSurfaceSecondary": "#F5F5F5",
+      "surfaceTertiary": "#2D2D2D",
+      "onSurfaceTertiary": "#F5F5F5",
+      "surfaceInverse": "#F5F5F5",
+      "onSurfaceInverse": "#111111",
+      "brand": "#F25C05",
+      "onBrand": "#FFFFFF",
+      "brandPrimary": "#F25C05",
+      "onBrandPrimary": "#FFFFFF",
+      "brandSecondary": "#FF7A29",
+      "onBrandSecondary": "#111111",
+      "brandTertiary": "#451900",
+      "onBrandTertiary": "#FFDBC7",
+      "success": "#00B233",
+      "onSuccess": "#111111",
+      "warning": "#FFB219",
+      "onWarning": "#111111",
+      "error": "#FF3333",
+      "onError": "#111111",
+      "info": "#718096",
+      "onInfo": "#111111",
+      "border": "#333333",
+      "borderStrong": "#F5F5F5",
+      "divider": "#2D2D2D",
+      "muted": "#9E9E9E"
+    }
+  },
+  "typography": {
+    "displayFontFamily": "Archivo",
+    "textFontFamily": "IBM Plex Sans",
+    "scale": {
+      "sm": 12,
+      "base": 14,
+      "lg": 16,
+      "xl": 20,
+      "2xl": 24
+    }
+  },
+  "spacing": {
+    "rule": "Use rigid grid structures with intentional visual tension. Exposed spacing and edge-to-edge containers are preferred over soft floating cards.",
+    "xs": 4,
+    "sm": 8,
+    "md": 12,
+    "lg": 16,
+    "xl": 24,
+    "2xl": 32,
+    "3xl": 48
+  },
+  "radius_tokens": {
+    "sm": 0,
+    "md": 0,
+    "lg": 0,
+    "pill": 0
+  },
+  "shadow_tier": "0",
+  "navigation": "bottom_tabs",
+  "icon_set": "Phosphor",
+  "glassmorphism": {
+    "enabled": false,
+    "do's": [],
+    "dont's": ["Never use blur or glass effects in this Brutalist personality. Rely on solid colors, high-contrast borders, and rigid geometry."]
+  },
+  "platform_libraries": {
+    "glass": {
+      "ios": "solid surfaceSecondary",
+      "android": "solid surfaceSecondary",
+      "low_end_android_fallback": "solid surfaceSecondary"
+    },
+    "image": "expo-image",
+    "blur": "solid surfaceSecondary",
+    "bottom_sheet": "@gorhom/bottom-sheet",
+    "animation": "react-native-reanimated",
+    "gesture": "react-native-gesture-handler"
+  },
+  "screens": [
+    {
+      "name": "Login",
+      "purpose": "Secure entry point demanding NIK and Employee Name.",
+      "states": {
+        "loading": "Centered harsh mono spinner.",
+        "empty": "N/A",
+        "error": "Solid red (#D30000) bottom sheet with sharp typography."
+      },
+      "layout": "Oversized 'SAFETY FIRST' typography header, hard-aligned left. Edge-to-edge input fields with thick borders (1.5pt). Massive solid brand-colored submit button pinned to the bottom. No rounded corners."
+    },
+    {
+      "name": "Beranda (Home)",
+      "purpose": "Portal landing with safety quote motif and module entry points.",
+      "states": {
+        "loading": "Mono skeleton blocks.",
+        "empty": "N/A",
+        "error": "Error block with a rigid retry button."
+      },
+      "layout": "Top section: High-contrast safety quote in oversized display font. Mid section: Stacked, full-width modular entry cards for 'Hazard Report', 'Inspeksi', and 'Dashboard/Monitoring'. Cards use thick outlines and strong iconography. Minimal padding between sections."
+    },
+    {
+      "name": "Hazard Report (List)",
+      "purpose": "List of logged hazards with clear status and risk visibility.",
+      "states": {
+        "loading": "Skeleton list rows with strict geometric lines.",
+        "empty": "Industrial warning sign icon, 'No active hazards found.', rigid CTA 'New Report'.",
+        "error": "Alert icon with high-contrast text and a 'Reload' button."
+      },
+      "layout": "Sticky horizontal filter row (Status, Dept, Risk) at the top with sharp active states. Below, a scrollable list of edge-to-edge cards. Each card displays risk level via a sharp left-border color accent (Green/Amber/Orange/Red) and an explicit 'Open/Close' tag. A sticky bottom 'Create New' action button."
+    },
+    {
+      "name": "Hazard Report (Create)",
+      "purpose": "Data entry form for logging a new hazard with mandatory evidence.",
+      "states": {
+        "loading": "Centered spinner during submission.",
+        "empty": "N/A",
+        "error": "Inline validation messages with sharp red borders."
+      },
+      "layout": "Single-column structure. Sections separated by thick 2pt black dividers. Large touch-friendly segmented controls for Risk Level (Rendah/Sedang/Tinggi/Ekstrem). Mandatory 'Before' photo upload area acts as a massive tap target. Sticky bottom 'Submit' inside KeyboardAvoidingView."
+    },
+    {
+      "name": "Inspection (List & Detail)",
+      "purpose": "Track and review safety inspections.",
+      "states": {
+        "loading": "Data table skeletons.",
+        "empty": "Clipboard icon, 'No inspections logged.', 'Start Inspection' CTA.",
+        "error": "Error block with retry action."
+      },
+      "layout": "List: Table-like rows grouped by Inspection Type with Approved/Pending status flags. Detail: A brutalist header block for metadata, followed by a raw data table for observation rows. 'Generate PDF' action pinned."
+    },
+    {
+      "name": "Dashboard",
+      "purpose": "High-level KPI tracking and analytics.",
+      "states": {
+        "loading": "Grid of skeleton counters.",
+        "empty": "N/A",
+        "error": "Data fetch error block."
+      },
+      "layout": "Top strip: 4 compact KPI tiles (Total, Open, Close, Total Inspeksi) using monospace digits. Below: Stacked charts (Hazard by Dept, Risk Level, Category, Monthly Trend) using sharp SVG bars/lines. Strong contrasting background blocks for each chart."
+    }
+  ],
+  "images": {
+    "login_hero": {
+      "url": "https://images.unsplash.com/photo-1655549136009-6aa6ff5de57e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwxfHxtaW5pbmclMjBzaXRlJTIwaW5kdXN0cmlhbCUyMHNhZmV0eXxlbnwwfHx8fDE3ODk3MDIxNDJ8MA&ixlib=rb-4.1.0&q=85",
+      "dark": "https://images.unsplash.com/photo-1774196243142-04ffcded2d59?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwyfHxtaW5pbmclMjBzaXRlJTIwaW5kdXN0cmlhbCUyMHNhZmV0eXxlbnwwfHx8fDE3ODk3MDIxNDJ8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Mining site heavy vehicles"
+    },
+    "inspection_empty": {
+      "url": "https://images.unsplash.com/photo-1743385779431-45d26d9775b1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwxfHxzYWZldHklMjBpbnNwZWN0b3IlMjBjbGlwYm9hcmR8ZW58MHx8fHwxNzg5NzAyMTQyfDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Safety inspector clipboard"
+    },
+    "hazard_empty": {
+      "url": "https://images.unsplash.com/photo-1627024165011-6a9e2c4ea343?crop=entropy&cs=srgb&fm=jpg&ixid=M3w7NDk1ODF8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwd2FybmluZyUyMHNpZ258ZW58MHx8fHwxNzg5NzAyMTQyfDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Industrial warning sign"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Follow the 5 Brutalist Mobile personality: use 0px border radius everywhere. Everything is a rigid block.",
+    "Do NOT use glassmorphism or blur effects. Surfaces must be solid with high contrast borders.",
+    "Use Archivo for display headers and IBM Plex Sans for body/UI. If available, use a monospace font (like IBM Plex Mono) for numeric KPIs, dates, and risk levels to enhance the tactical feel.",
+    "Risk Levels must map to specific colors: Rendah (success/Green), Sedang (warning/Amber), Tinggi (brandPrimary/Orange), Ekstrem (error/Red). Open status maps to error, Close maps to success.",
+    "Borders should be used structurally. Use thick borders (1pt or 1.5pt) to define cards and sections instead of soft shadows. Shadow tier is 0.",
+    "Ensure 'Before/After' photo upload components are massive, high-contrast tap targets, strictly rectangular.",
+    "Ensure all buttons are sticky at the bottom of forms/lists using KeyboardAvoidingView and absolute positioning where necessary to avoid scrolling past the CTA.",
+    "All image backgrounds must use the mandatory gradient-to-dark scrim pattern (top -> bottom, transparent -> 70% surfaceInverse) if text is rendered on top.",
+    "Zero tolerance for blue or purple accents. Keep to the strict industrial orange, black, white, and semantic colors."
+  ]
+}
