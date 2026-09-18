@@ -98,6 +98,64 @@ async def me(user: dict = Depends(current_user)):
     return {k: user[k] for k in ("nik", "nama", "jabatan", "departemen", "pt") if k in user}
 
 
+# ----- Monitoring auth (Superintendent / Manager / Head Dept) -----
+MON_PASSWORD = os.environ.get("MON_PASSWORD", "123gtspastibisa")
+
+
+class MonLoginBody(BaseModel):
+    username: str
+    password: str
+
+
+def _find_employee_by_name(name: str):
+    rows = sheets.get_rows(sheets.EMPLOYEE_GID)
+    uname = name.strip().lower()
+    for r in rows[1:]:
+        if len(r) < 5:
+            continue
+        nama = (r[2] or "").strip()
+        if nama.lower() == uname:
+            return {
+                "nik": (r[1] or "").strip(),
+                "nama": nama,
+                "jabatan": (r[3] or "").strip(),
+                "departemen": (r[4] or "").strip(),
+            }
+    return None
+
+
+@api.post("/monitoring/login")
+async def monitoring_login(body: MonLoginBody):
+    if body.password.strip() != MON_PASSWORD:
+        raise HTTPException(401, "Password salah")
+    uname = body.username.strip().lower()
+    if uname == "admin":
+        mon_user = {"nama": "Master", "role": "master", "departemen": "", "scope": "Semua Departemen", "jabatan": "Administrator"}
+    else:
+        emp = await run_in_threadpool(_find_employee_by_name, body.username)
+        if not emp:
+            raise HTTPException(401, "Username tidak ditemukan di Data Karyawan")
+        mon_user = {"nama": emp["nama"], "role": "head", "departemen": emp["departemen"], "scope": emp["departemen"] or "-", "jabatan": emp["jabatan"]}
+    token = make_token({**mon_user, "mon": True})
+    return {"token": token, "user": mon_user}
+
+
+@api.get("/monitoring/inspections")
+async def monitoring_inspections(user: dict = Depends(current_user)):
+    if not user.get("mon"):
+        raise HTTPException(403, "Bukan sesi monitoring")
+    items = await run_in_threadpool(_load_inspections)
+    dept = (user.get("departemen") or "").strip()
+    if user.get("role") != "master" and dept:
+        items = [x for x in items if x.get("departemen") == dept]
+    light = [{k: x[k] for k in x if k not in ("columns", "rows", "form")} for x in items]
+    for y, x in zip(light, items):
+        y["row_count"] = x.get("item_count", 0)
+    total = len(light)
+    approved = sum(1 for x in light if x["status"].lower() == "approved")
+    return {"total": total, "approved": approved, "pending": total - approved, "scope": user.get("scope", ""), "items": light}
+
+
 # ---------------------------------------------------------------------------
 # Hazard Report
 # ---------------------------------------------------------------------------
@@ -321,6 +379,19 @@ async def create_hazard(body: HazardCreate, user: dict = Depends(current_user)):
 import json as _json
 
 
+def _form_item_count(form):
+    """Number of observation points regardless of form type."""
+    if not isinstance(form, dict):
+        return 0
+    ft = form.get("formType", "")
+    if ft == "checklist":
+        return sum(len(c.get("questions", []) or []) for c in form.get("categories", []) or [])
+    if ft in ("scoring", "preplab"):
+        return len(form.get("items", []) or [])
+    # table / legacy
+    return len(form.get("rows", []) or [])
+
+
 def _inspection_to_obj(r, idx):
     form_raw = _cell(r, 14)
     form = None
@@ -329,9 +400,9 @@ def _inspection_to_obj(r, idx):
             form = _json.loads(form_raw)
         except Exception:
             form = None
-    header = (form or {}).get("headerData", {}) if isinstance(form, dict) else {}
-    rows_ = (form or {}).get("rows", []) if isinstance(form, dict) else []
-    columns = (form or {}).get("columns", []) if isinstance(form, dict) else []
+    form = form if isinstance(form, dict) else {}
+    header = form.get("headerData", {}) if isinstance(form.get("headerData"), dict) else {}
+    area = header.get("area", "") or form.get("lokasi", "") or form.get("lokasiArea", "") or form.get("site", "")
     return {
         "id": idx,
         "timestamp": _cell(r, 0),
@@ -348,11 +419,16 @@ def _inspection_to_obj(r, idx):
         "approved_by": _cell(r, 11),
         "approved_at": _cell(r, 12),
         "pdf": _cell(r, 13),
-        "form_title": (form or {}).get("formTitle", "") if isinstance(form, dict) else "",
-        "form_code": (form or {}).get("formCode", "") if isinstance(form, dict) else "",
-        "area": header.get("area", "") if isinstance(header, dict) else "",
-        "columns": columns,
-        "rows": rows_,
+        "form_title": form.get("formTitle", ""),
+        "form_code": form.get("formCode", ""),
+        "form_type": form.get("formType", ""),
+        "area": area,
+        "item_count": _form_item_count(form),
+        # keep legacy keys for table-type detail
+        "columns": form.get("columns", []) or [],
+        "rows": form.get("rows", []) or [],
+        # full structured form for detail rendering (stripped in list endpoint)
+        "form": form,
     }
 
 
@@ -380,8 +456,8 @@ async def list_inspections(
     # trim heavy rows/columns for list
     light = []
     for x in items:
-        y = {k: x[k] for k in x if k not in ("columns", "rows")}
-        y["row_count"] = len(x["rows"])
+        y = {k: x[k] for k in x if k not in ("columns", "rows", "form")}
+        y["row_count"] = x.get("item_count", 0)
         light.append(y)
     if jenis:
         light = [x for x in light if x["jenis"] == jenis]
@@ -430,14 +506,17 @@ class InspRow(BaseModel):
 
 class InspectionCreate(BaseModel):
     jenis: str
-    shift: str = "Day"
+    shift: str = "Shift Siang"
+    status: str = "Pending"
+    email: str = ""
+    form: dict = {}
+    # legacy table fields (fallback)
     area: str = ""
     tanggal: str = ""
     waktu: str = ""
     columns: list = []
     rows: list = []
     kesimpulan: str = ""
-    status: str = "Pending"
 
 
 @api.post("/inspections")
@@ -445,23 +524,38 @@ async def create_inspection(body: InspectionCreate, user: dict = Depends(current
     if not sheets.writes_enabled():
         raise HTTPException(503, "Google Sheets belum terhubung. Admin perlu menambahkan Service Account.")
     now = now_wib()
-    form = {
-        "formTitle": body.jenis,
-        "headerData": {"area": body.area, "hariTanggal": body.tanggal or now.strftime("%Y-%m-%d"), "waktuInspeksi": body.waktu},
-        "columns": body.columns,
-        "rows": body.rows,
-        "kesimpulan": body.kesimpulan,
-        "observer1Name": user.get("nama", ""),
-        "observer1Nik": user.get("nik", ""),
-        "observer1Jabatan": user.get("jabatan", ""),
-        "observer1Departemen": user.get("departemen", ""),
-        "formType": "table",
-    }
+    if body.form:
+        # Full Zite-structured form (checklist/scoring/preplab/table). Inject
+        # server-side identity + timestamps so the stored JSON is complete.
+        form = dict(body.form)
+        form.setdefault("formType", form.get("formType", ""))
+        form["jenisInspeksi"] = body.jenis
+        form["nik"] = user.get("nik", "")
+        form["nama"] = user.get("nama", "")
+        form["jabatan"] = user.get("jabatan", "")
+        form["departemen"] = user.get("departemen", "")
+        form["email"] = body.email
+        form["shift"] = body.shift
+        form.setdefault("tanggal", body.tanggal or now.strftime("%Y-%m-%d"))
+        form.setdefault("waktu", body.waktu)
+    else:
+        form = {
+            "formTitle": body.jenis,
+            "headerData": {"area": body.area, "hariTanggal": body.tanggal or now.strftime("%Y-%m-%d"), "waktuInspeksi": body.waktu},
+            "columns": body.columns,
+            "rows": body.rows,
+            "kesimpulan": body.kesimpulan,
+            "observer1Name": user.get("nama", ""),
+            "observer1Nik": user.get("nik", ""),
+            "observer1Jabatan": user.get("jabatan", ""),
+            "observer1Departemen": user.get("departemen", ""),
+            "formType": "table",
+        }
     row = [""] * 15
     row[0] = now.strftime("%d/%m/%Y, %H.%M.%S")
     row[1] = now.strftime("%d/%m/%Y")
     row[2] = now.strftime("%H.%M.%S")
-    row[3] = ""
+    row[3] = body.email
     row[4] = body.shift
     row[5] = user.get("nik", "")
     row[6] = user.get("nama", "")
@@ -478,6 +572,27 @@ async def create_inspection(body: InspectionCreate, user: dict = Depends(current
         logger.exception("append inspection failed")
         raise HTTPException(500, f"Gagal menyimpan: {e}")
     return {"ok": True}
+
+
+class ApproveBody(BaseModel):
+    status: str = "Approved"
+
+
+@api.post("/inspections/{row_id}/approve")
+async def approve_inspection(row_id: int, body: ApproveBody, user: dict = Depends(current_user)):
+    if not sheets.writes_enabled():
+        raise HTTPException(503, "Google Sheets belum terhubung.")
+    now = now_wib()
+    approver = user.get("nama", "") or "Approver"
+    try:
+        # 1-based columns: status=11, approved_by=12, approved_at=13
+        await run_in_threadpool(sheets.update_cell, sheets.INSPECTION_GID, row_id, 11, body.status)
+        await run_in_threadpool(sheets.update_cell, sheets.INSPECTION_GID, row_id, 12, approver)
+        await run_in_threadpool(sheets.update_cell, sheets.INSPECTION_GID, row_id, 13, now.strftime("%d/%m/%Y %H:%M"))
+    except Exception as e:
+        logger.exception("approve failed")
+        raise HTTPException(500, f"Gagal approve: {e}")
+    return {"ok": True, "status": body.status, "approved_by": approver}
 
 
 # ---------------------------------------------------------------------------

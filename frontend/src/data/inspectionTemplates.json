@@ -1,0 +1,2292 @@
+[
+{
+"jenis": "PRE JOB INSPECTION - DRILLING ACTIVITY",
+"formType": "checklist",
+"formCode": "GTS-FR-SFT-05.07-05",
+"formTitle": "PRE JOB INSPECTION",
+"formSubtitle": "DRILLING ACTIVITY",
+"tanggalEfektif": "25 Maret 2024",
+"revisi": "0.1",
+"hasNA": true,
+"categories": [
+{
+"title": "A. Lingkungan",
+"questions": [
+{
+"text": "Apakah kondisi lingkungan bebas dari cuaca ekstrem, kelembaban tinggi, debu, gas berbahaya?"
+},
+{
+"text": "Apakah area kerja sudah tersedia parit dari lubang bor?"
+},
+{
+"text": "Apakah area pekerjaan sudah tersedia Bak penampungan air limbah pemboran?"
+},
+{
+"text": "Apakah area kerja bebas dari Pohon kering atau hewan yang berbahaya?"
+},
+{
+"text": "Apakah penerangan sudah memadai dan berfungsi baik?"
+},
+{
+"text": "Apakah tersedia tempat sampah sesuai jenisnya, rutin dikosongkan dan tidak berserakan?"
+},
+{
+"text": "Apakah terdapat saklar / kabel listrik / kelistrikan yang dalam keadaan berbahaya?"
+},
+{
+"text": "Apakah Pipa, Keran, dan katub dalam kondisi bagus dan tidak bocor?"
+},
+{
+"text": "Apakah drum penampung oli bekas tersedia?"
+},
+{
+"text": "Apakah tersedia absorbent (penyerap ceceran/ tumpahan B3 cair) mencukupi?"
+},
+{
+"text": "Apakah daerah pengelasan dilengkapi dengan tabir las dan jauh dari material mudah terbakar?"
+},
+{
+"text": "Apakah posisi dari unit yang di parkir dalam kondisi aman?"
+},
+{
+"text": "Apakah daerah pengelasan dilokasi terpisah dan dilengkapi dengan tabir las?"
+},
+{
+"text": "Apakah posisi dari unit di parkir cukup aman?"
+}
+]
+},
+{
+"title": "B. Manusia",
+"questions": [
+{
+"text": "Apakah semua pekerja menggunakan APD yang sesuai dengan benar?"
+},
+{
+"text": "Apakah semua pekerja dalam keadaan fit dan siap kerja?"
+},
+{
+"text": "Apakah terdapat aktifitas berisiko tinggi tanpa di lengkapi dengan permit to work? (bekerja di ketinggian, diatas air, ruang terbatas, pekerjaan panas dan penggalian)"
+},
+{
+"text": "Apakah semua pekerja telah memahami rencana kerja?"
+},
+{
+"text": "Apakah posisi semua pekerja dalam keadaan aman?"
+},
+{
+"text": "Apakah semua pekerja telah memahami prosedur kerja yang terkait dengan pekerjaan anda?"
+}
+]
+},
+{
+"title": "C. Peralatan",
+"questions": [
+{
+"text": "Apakah semua peralatan dan perkakas dalam keadaan baik?"
+},
+{
+"text": "Apakah tersedia APAR dalam kondisi baik dan ditempatkan di posisi yang mudah di jangkau?"
+},
+{
+"text": "Apakah terdapat tangga / pedestal dalam kondisi tidak baik digunakan?"
+},
+{
+"text": "Apakah peralatan bergerak yang digunakan dalam kondisi layak untuk digunakan?"
+}
+]
+}
+]
+},
+{
+"jenis": "PRE JOB INSPECTION - FRONT LOADING ORE",
+"formType": "checklist",
+"formCode": "GTS-FR-SFT-05.07-75",
+"formTitle": "PRE JOB INSPECTION",
+"formSubtitle": "FRONT LOADING ORE",
+"tanggalEfektif": "12 Mei 2026",
+"revisi": "0.0",
+"hasNA": true,
+"categories": [
+{
+"title": "A. Lingkungan",
+"questions": [
+{
+"text": "Apakah jalan dalam kondisi baik? (Tidak berlumpur, tidak ada genangan air, tidak undulating, dan tidak ada boulder)"
+},
+{
+"text": "Apakah debu terkendali dengan baik? (Penyiraman terjadwal dan rutin)"
+},
+{
+"text": "Apakah lebar jalan utama sesuai standar? (Minimal 9m / 3,5X lebar DT)"
+},
+{
+"text": "Apakah lebar jalan jari-jari sesuai standar? (Minimal 6m / 2,5X lebar DT)"
+},
+{
+"text": "Apakah luas area untuk manuver front loading memadai? (Panjang minimal 13m / 1,5X panjang DT & Lebar 6m / 2,5 lebar DT)"
+},
+{
+"text": "Apakah terdapat titik buta (Blind spot) yang belum dikendalikan pada pertigaan/perempatan?"
+},
+{
+"text": "Apakah drainase tersedia dalam keadaan baik?"
+},
+{
+"text": "Apakah terdapat titik genangan air / titik potensi genangan air?"
+},
+{
+"text": "Apakah safety berm/tanggul sesuai standar (Minimal 3/4 ban unit terbesar dan tidak terdapat material keras di tanggul)"
+},
+{
+"text": "Apakah tersedia penerangan di area front loading? (Lampu sorot atau tower lamp)"
+},
+{
+"text": "Apakah semua lokasi telah terpasang rambu lalu lintas yang sesuai dengan kebutuhan?"
+},
+{
+"text": "Apakah terdapat unit bergerak yang mengalami kerusakan tanpa penanda? (safety cone / lampu hazard)"
+},
+{
+"text": "Apakah terdapat antrian yang panjang tanpa pengendalian spotter / traffic man?"
+},
+{
+"text": "Apakah terdapat area yang berpotensi longsor atau terdapat batuan menggantung?"
+},
+{
+"text": "Apakah channel komunikasi telah diketahui & digunakan oleh seluruh unit yang melintas? (Terdapat rambu channel area)"
+},
+{
+"text": "Apakah terdapat titik kumpul jika terjadi keadaan darurat?"
+},
+{
+"text": "Apakah tersedia area parkir LV?"
+}
+]
+},
+{
+"title": "B. Manusia",
+"questions": [
+{
+"text": "Apakah semua pekerja dalam keadaan fit dan siap kerja?"
+},
+{
+"text": "Apakah semua driver memiliki SIMPER yang valid? (Random check)"
+},
+{
+"text": "Apakah semua pekerja telah memahami rencana kerja / rencana arus lalu lintas yang di tentukan?"
+},
+{
+"text": "Apakah driver dan operator telah melaksanakan P2H unit? (Random check)"
+},
+{
+"text": "Apakah antrian DT paralel (depan belakang), rapih, dan berjarak? (Minimal 1X panjang DT)"
+},
+{
+"text": "Apakah semua pekerja telah mengetahui prosedur loading ore? (Random check)"
+}
+]
+}
+]
+},
+{
+"jenis": "PRE JOB INSPECTION - GENERAL ACTIVITY",
+"formType": "checklist",
+"formCode": "GTS-FR-SFT-05.07-01",
+"formTitle": "PRE JOB INSPECTION",
+"formSubtitle": "GENERAL ACTIVITY",
+"tanggalEfektif": "25 Maret 2024",
+"revisi": "0.0",
+"hasNA": true,
+"categories": [
+{
+"title": "A. Lingkungan",
+"questions": [
+{
+"text": "Apakah kondisi lingkungan bebas dari cuaca ekstrem, kelembaban tinggi, debu, gas berbahaya?"
+},
+{
+"text": "Apakah area kerja bebas dari serangga, tumbuhan atau hewan yang berbahaya?"
+},
+{
+"text": "Apakah area kerja aman dari kabel atau peralatan yang rusak, Grounding, dll?"
+},
+{
+"text": "Apakah terdapat substandard pada penerangan / kebisingan / suhu di area kerja?"
+},
+{
+"text": "Apakah kondisi housekeeping dalam kondisi baik?"
+},
+{
+"text": "Apakah area kerja terbebas dari benda atau kondisi yang bisa menyebabkan Jatuh, terpeleset, tersandung, sisi yang tajam dll?"
+},
+{
+"text": "Apakah penanda yang tepat telah di implementasikan (barikade / rambu - rambu peringatan lainnya)?"
+}
+]
+},
+{
+"title": "B. Manusia",
+"questions": [
+{
+"text": "Apakah semua pekerja menggunakan APD yang sesuai dengan benar?"
+},
+{
+"text": "Apakah semua pekerja dalam keadaan fit dan siap kerja?"
+},
+{
+"text": "Apakah terdapat aktifitas berisiko tinggi tanpa di lengkapi dengan permit to work? (bekerja di ketinggian, diatas air, ruang terbatas, pekerjaan panas dan penggalian)"
+},
+{
+"text": "Apakah semua pekerja telah memahami rencana kerja?"
+},
+{
+"text": "Apakah posisi semua pekerja dalam keadaan aman?"
+},
+{
+"text": "Apakah semua pekerja telah memahami prosedur kerja yang terkait dengan pekerjaan anda?"
+}
+]
+},
+{
+"title": "C. Peralatan",
+"questions": [
+{
+"text": "Apakah semua peralatan dan perkakas dalam keadaan baik?"
+},
+{
+"text": "Apakah tersedia APAR dalam kondisi baik dan ditempatkan di posisi yang mudah di jangkau?"
+},
+{
+"text": "Apakah terdapat tangga / pedestal dalam kondisi tidak baik digunakan?"
+},
+{
+"text": "Apakah peralatan bergerak yang digunakan dalam kondisi layak untuk digunakan?"
+}
+]
+}
+]
+},
+{
+"jenis": "PRE JOB INSPECTION - HAULING AREA",
+"formType": "checklist",
+"formCode": "GTS-FR-SFT-05.07-04",
+"formTitle": "PRE JOB INSPECTION",
+"formSubtitle": "HAULING AREA",
+"tanggalEfektif": "21 Maret 2024",
+"revisi": "0.0",
+"hasNA": true,
+"categories": [
+{
+"title": "A. Lingkungan",
+"questions": [
+{
+"text": "Apakah akses jalan dalam keadaan baik? (berlumpur, genangan air, blind spot, lebar, grade, undulasi, dimensi dll)"
+},
+{
+"text": "Apakah debu terkendali dengan baik?"
+},
+{
+"text": "Apakah lebar jalan sesuai dengan standar?"
+},
+{
+"text": "Apakah terdapat penyempitan jalan yang tidak dikendalikan?"
+},
+{
+"text": "Apakah terdapat persimpangan tanpa pengendalian?"
+},
+{
+"text": "Apakah terdapat titik buta (Blind spot) yang belum dikendalikan pada pertigaan/perempatan?"
+},
+{
+"text": "Apakah drainase tersedia dalam keadaan baik?"
+},
+{
+"text": "Apakah terdapat titik genangan air / titik potensi genangan air?"
+},
+{
+"text": "Apakah terdapat grade, cross fall, super elevasi jalan yang tidak sesuai standar dan belum dikendalikan?"
+},
+{
+"text": "Apakah terdapat titik yang perlu pemisah / devider jalan?"
+},
+{
+"text": "Apakah semua lokasi telah terpasang rambu lalu lintas yang sesuai dengan kebutuhan?"
+},
+{
+"text": "Apakah terdapat unit bergerak yang mengalami kerusakan tanpa penanda? (safety cone / lampu hazard)"
+},
+{
+"text": "Apakah terdapat antrian yang panjang tanpa pengendalian spotter / traffic man?"
+},
+{
+"text": "Apakah terdapat area yang berpotensi longsor atau terdapat batuan menggantung?"
+},
+{
+"text": "Apakah terdapat titik dengan tanggul (safety berm) yang tidak sesuai?"
+}
+]
+},
+{
+"title": "B. Manusia",
+"questions": [
+{
+"text": "Apakah semua pekerja dalam keadaan fit dan siap kerja?"
+},
+{
+"text": "Apakah semua pekerja memiliki SIMPER yang sesuai dan masih Valid?"
+},
+{
+"text": "Apakah semua pekerja telah memahami rencana kerja / rencana arus lalu lintas yang di tentukan?"
+},
+{
+"text": "Apakah terdapat pelanggaran rambu lalu lintas yang anda amati?"
+},
+{
+"text": "Apakah semua pekerja telah memahami prosedur kerja yang terkait dengan pekerjaan anda?"
+}
+]
+}
+]
+},
+{
+"jenis": "PRE JOB INSPECTION - JETTY AREA",
+"formType": "checklist",
+"formCode": "GTS-FR-SFT-05.07-77",
+"formTitle": "PRE JOB INSPECTION",
+"formSubtitle": "JETTY AREA",
+"tanggalEfektif": "08 Juni 2026",
+"revisi": "0.0",
+"hasNA": true,
+"categories": [
+{
+"title": "A. Lingkungan",
+"questions": [
+{
+"text": "Apakah akses jalan menuju area jetty dalam kondisi aman dan layak dilalui?"
+},
+{
+"text": "Apakah kondisi jalan bebas dari genangan air, lumpur, atau material yang mengganggu?"
+},
+{
+"text": "Apakah area dumping ore di dalam tongkang berada pada kondisi rata, stabil, dan tidak licin?"
+},
+{
+"text": "Apakah safety berm pada area dumping dalam kondisi baik dan sesuai standar?"
+},
+{
+"text": "Apakah tidak terdapat titik amblas, retakan, atau kerusakan pada area jetty?"
+},
+{
+"text": "Apakah area kerja bebas dari material berserakan yang dapat mengganggu operasional?"
+},
+{
+"text": "Apakah rambu lalu lintas dan petunjuk keselamatan telah terpasang dengan baik?"
+},
+{
+"text": "Apakah jalur keluar-masuk unit dan area antrean telah tertata dengan baik?"
+},
+{
+"text": "Apakah penerangan area kerja mencukupi untuk pekerjaan malam hari?"
+},
+{
+"text": "Apakah kondisi cuaca, angin, arus, dan gelombang aman untuk kegiatan barging?"
+},
+{
+"text": "Apakah posisi tongkang aman dan stabil untuk proses pemuatan?"
+},
+{
+"text": "Apakah area kerja bebas dari potensi orang jatuh ke laut?"
+},
+{
+"text": "Apakah jalur evakuasi dan titik kumpul dalam kondisi baik dan mudah diakses?"
+},
+{
+"text": "Apakah tidak terdapat benda terapung atau hambatan di sekitar area sandar tongkang?"
+},
+{
+"text": "Apakah area kerja bebas dari potensi tertabrak alat berat atau kendaraan?"
+},
+{
+"text": "Apakah area manuver alat muat dan kendaraan telah ditetapkan dengan jelas?"
+}
+]
+},
+{
+"title": "B. Manusia",
+"questions": [
+{
+"text": "Apakah semua pekerja dalam keadaan fit dan siap kerja?"
+},
+{
+"text": "Apakah semua pekerja memiliki ID Card dan SIMPER yang sesuai dan masih valid?"
+},
+{
+"text": "Apakah seluruh pekerja memahami prosedur keadaan darurat di jetty?"
+},
+{
+"text": "Apakah P5M telah dilaksanakan sebelum pekerjaan dimulai?"
+},
+{
+"text": "Apakah seluruh pekerja memahami tugas dan tanggung jawabnya masing-masing?"
+},
+{
+"text": "Apakah seluruh personel yang bekerja di area tepi jetty menggunakan life jacket?"
+},
+{
+"text": "Apakah terdapat pelanggaran rambu lalu lintas yang Anda amati?"
+},
+{
+"text": "Apakah seluruh pekerja memahami alur lalu lintas dan area kerja di jetty?"
+},
+{
+"text": "Apakah spotter/flagman telah ditunjuk dan berada pada posisi yang aman?"
+},
+{
+"text": "Apakah seluruh pekerja menggunakan APD sesuai ketentuan?"
+},
+{
+"text": "Apakah komunikasi antar operator, spotter, dan pengawas berjalan dengan baik?"
+},
+{
+"text": "Apakah area kerja steril dari personel yang tidak berkepentingan?"
+},
+{
+"text": "Apakah semua pekerja telah memahami prosedur kerja (JSA/SOP) yang terkait dengan pekerjaan anda?"
+}
+]
+},
+{
+"title": "C. Peralatan",
+"questions": [
+{
+"text": "Apakah seluruh unit/peralatan yang digunakan dalam kondisi layak operasi?"
+},
+{
+"text": "Apakah seluruh unit/peralatan telah dilakukan pemeriksaan sebelum digunakan (P2H)?"
+},
+{
+"text": "Apakah perangkat komunikasi berfungsi dengan baik?"
+},
+{
+"text": "Apakah APAR tersedia dan siap digunakan?"
+},
+{
+"text": "Apakah ramp door dalam kondisi baik, aman, dan dapat berfungsi sebagaimana mestinya?"
+},
+{
+"text": "Apakah life buoy, life jacket, dan peralatan penyelamatan tersedia dalam kondisi baik serta siap digunakan?"
+}
+]
+}
+]
+},
+{
+"jenis": "PRE JOB INSPECTION - PENGAWASAN PENAMBANGAN",
+"formType": "checklist",
+"formCode": "GTS-FR-SFT-05.07-02",
+"formTitle": "PRE JOB INSPECTION",
+"formSubtitle": "PENGAWASAN PENAMBANGAN",
+"tanggalEfektif": "24 Maret 2024",
+"revisi": "0",
+"hasNA": true,
+"categories": [
+{
+"title": "A. Lingkungan",
+"questions": [
+{
+"text": "Apakah area kerja selective bukan daerah mineout atau timbunan?"
+},
+{
+"text": "Apakah ada bench tersingkap yang belum dilakukan pengambilan sampling?"
+},
+{
+"text": "Apakah dalam melakukan selective mining saat kondisi hujan?"
+},
+{
+"text": "Apakah ada data sample assay sebelum melakukan selective mining?"
+},
+{
+"text": "Apakah terdapat penerangan yang cukup di area kerja?"
+},
+{
+"text": "Apakah terdapat potensi longsor / runtuhan material di area kerja?"
+},
+{
+"text": "Apakah area selective terbebas dari material pengotor (Waste / OB)?"
+},
+{
+"text": "Apakah tinggi bench sudah sesuai standard GMP (Good Mining Practice)?"
+},
+{
+"text": "Apakah area kerja terbebas dari lumpur atau genangan air?"
+},
+{
+"text": "Apakah terdapat batu lepas di atas bench pada lokasi selective mining?"
+}
+]
+},
+{
+"title": "B. Manusia",
+"questions": [
+{
+"text": "Apakah semua personel grade control dalam keadaan fit dan siap bekerja?"
+},
+{
+"text": "Apakah crew sampler grade control melakukan sampling pre mining di area yang berpotensi terdapat ore?"
+},
+{
+"text": "Apakah crew grade control memberi intruksi kepada operator untuk memisahkan boulder saat selective mining?"
+},
+{
+"text": "Apakah semua personil grade control menggunakan APD?"
+},
+{
+"text": "Apakah crew grade control berada pada jarak aman dari excavator pada saat pengawasan selektif mining?"
+},
+{
+"text": "Apakah semua personil grade control telah memahami rencana kerja?"
+},
+{
+"text": "Apakah posisi personil grade control berada pada daerah aman?"
+},
+{
+"text": "Apakah terdapat crew grade control yang belum memiliki pengalaman dalam melakukan pekerjaan?"
+},
+{
+"text": "Apakah personel grade control telah memahami prosedur kerja yang terkait dengan pekerjaan?"
+},
+{
+"text": "Apakah crew sampler dapar menulis kode sample dengan benar sesuai SOP?"
+}
+]
+},
+{
+"title": "C. Peralatan",
+"questions": [
+{
+"text": "Apakah semua peralatan yang digunakan untuk pekerjaan sudah tersedia di lokasi kerja?"
+},
+{
+"text": "Apakah jumlah excavator yang anda gunakan sudah sesuai dengan kebutuhan?"
+},
+{
+"text": "Apakah excavator yang ada digunakan sesuai dengan kebutuhan anda?"
+},
+{
+"text": "Apakah semua kerusakan pada peralatan telah di lakukan perbaikan?"
+},
+{
+"text": "Apakah ada posisi peralatan produksi yang berpotensi menimbulkan kecelakaan?"
+}
+]
+}
+]
+},
+{
+"jenis": "PRE JOB INSPECTION - POS SAMPEL (SAMPLE HOUSE)",
+"formType": "checklist",
+"formCode": "GTS-FR-SFT-05.07-76",
+"formTitle": "PRE JOB INSPECTION",
+"formSubtitle": "POS SAMPEL (SAMPLE HOUSE)",
+"tanggalEfektif": "25 Mei 2026",
+"revisi": "0.0",
+"hasNA": true,
+"categories": [
+{
+"title": "A. Lingkungan",
+"questions": [
+{
+"text": "Apakah area pengambilan sampel dalam kondisi aman?"
+},
+{
+"text": "Apakah area kerja bebas dari serangga, tumbuhan, atau hewan yang berbahaya?"
+},
+{
+"text": "Apakah terdapat pohon yang rawan roboh?"
+},
+{
+"text": "Apakah terdapat area yang berpotensi longsor atau terdapat batuan menggantung?"
+},
+{
+"text": "Apakah area kerja terdapat tempat pembuangan sampah yang tepat?"
+},
+{
+"text": "Apakah pos sampel dalam kondisi layak untuk digunakan?"
+},
+{
+"text": "Apakah area kerja terdapat papan informasi mengenai prosedur pekerjaan pengambilan sampel?"
+},
+{
+"text": "Apakah area kerja tidak sesuai dengan Standard Operational Prosedure (SOP) yang telah ditetapkan?"
+},
+{
+"text": "Apakah terdapat tangga / pedestal dalam kondisi tidak layak untuk digunakan?"
+},
+{
+"text": "Apakah area kerja terbebas dari benda atau kondisi yang bisa menyebabkan terjatuh, terpeleset, tersandung dll?"
+},
+{
+"text": "Apakah area kerja terbebas dari kondisi yang dapat menyebabkan tersengat listrik?"
+},
+{
+"text": "Apakah area kerja terdapat penanda / rambu yang terpasang?"
+}
+]
+},
+{
+"title": "B. Manusia",
+"questions": [
+{
+"text": "Apakah semua pekerja dalam keadaan fit dan siap kerja?"
+},
+{
+"text": "Apakah semua pekerja telah memahami rencana kerja yang telah ditentukan?"
+},
+{
+"text": "Apakah semua pekerja telah memahami prosedur kerja yang terkait dengan pekerjaan Anda?"
+},
+{
+"text": "Apakah semua pekerja memakai Alat Pelindung Diri (APD) dengan baik dan benar?"
+},
+{
+"text": "Apakah terdapat aktivitas berisiko bekerja di ketinggian tanpa body harness?"
+},
+{
+"text": "Apakah semua pekerja memahami terkait penulisan kode sampel?"
+}
+]
+},
+{
+"title": "C. Peralatan",
+"questions": [
+{
+"text": "Apakah semua peralatan yang digunakan untuk pekerjaan sudah tersedia di lokasi kerja?"
+},
+{
+"text": "Apakah peralatan APAR dalam kondisi mudah dijangkau dan dalam kondisi layak digunakan?"
+},
+{
+"text": "Apakah anchor point yang terpasang pada pos sample dalam kondisi layak digunakan?"
+},
+{
+"text": "Apakah body harness yang tersedia layak digunakan?"
+},
+{
+"text": "Apakah terdapat peralatan bergerak yang digunakan dalam kondisi layak digunakan?"
+},
+{
+"text": "Apakah terdapat ramp door yang aman dan layak untuk digunakan?"
+},
+{
+"text": "Apakah sling / tali pengikat ramp door dalam kondisi layak digunakan?"
+}
+]
+}
+]
+},
+{
+"jenis": "PRE JOB INSPECTION - WORKSHOP AREA",
+"formType": "checklist",
+"formCode": "GTS-FR-SFT-05.07-03",
+"formTitle": "PRE JOB INSPECTION",
+"formSubtitle": "WORKSHOP AREA",
+"tanggalEfektif": "25 Maret 2024",
+"revisi": "0.0",
+"hasNA": false,
+"categories": [
+{
+"title": "A. Lingkungan",
+"questions": [
+{
+"text": "Apakah saluran air / drainase dan perangkap oli dalam kondisi baik?"
+},
+{
+"text": "Apakah lantai kerja terbebas dari genangan air / lumpur / ceceran oli / tumpahan cairan lainnya?"
+},
+{
+"text": "Apakah bahan kimia diletakan pada tempat yang aman secara rapih?"
+},
+{
+"text": "Apakah penerangan sudah memadai dan berfungsi baik?"
+},
+{
+"text": "Apakah tersedia tempat sampah sesuai jenisnya, rutin dikosongkan dan tidak berserakan?"
+},
+{
+"text": "Apakah terdapat saklar / kabel listrik / kelistrikan yang dalam keadaan berbahaya?"
+},
+{
+"text": "Apakah Pipa, Keran, dan katub dalam kondisi bagus dan tidak bocor?"
+},
+{
+"text": "Apakah drum penampung oli bekas tersedia?"
+},
+{
+"text": "Apakah tersedia absorbent (penyerap ceceran/ tumpahan B3 cair) mencukupi?"
+},
+{
+"text": "Apakah daerah pengelasan dilengkapi dengan tabir las dan jauh dari material mudah terbakar?"
+},
+{
+"text": "Apakah posisi dari unit yang di parkir dalam kondisi aman?"
+},
+{
+"text": "Apakah daerah pengelasan dilokasi terpisah dan dilengkapi dengan tabir las?"
+},
+{
+"text": "Apakah posisi dari unit di parkir cukup aman?"
+}
+]
+},
+{
+"title": "B. Manusia",
+"questions": [
+{
+"text": "Apakah semua pekerja dalam keadaan fit dan siap kerja?"
+},
+{
+"text": "Apakah pekerja memiliki SIMPER yang sesuai dan masih Valid?"
+},
+{
+"text": "Apakah semua pekerja telah memahami rencana kerja dan prosedurnya?"
+},
+{
+"text": "Apakah terdapat pekerja yang belum memiliki pengalaman, melakukan aktifitas berisiko tinggi?"
+},
+{
+"text": "Apakah posisi semua pekerja dalam keadaan aman?"
+}
+]
+},
+{
+"title": "C. Peralatan",
+"questions": [
+{
+"text": "Apakah APAR dan eyewash tersedia dan dalam kondisi baik?"
+},
+{
+"text": "Apakah power tools (Mesin Gerinda, Bor, Impact dll) tersedia dan berfungsi dengan baik?"
+},
+{
+"text": "Apakah tersedia stand dump body, stand component dan dalam kondisi baik?"
+},
+{
+"text": "Apakah tabung gas kosong/berisi ditempatkan pada posisi aman (terikat) dan ada penutup besi?"
+},
+{
+"text": "Apakah ganjal (wheel chock) dan dongkrak digunakan dengan baik dan dalam keadaan baik?"
+},
+{
+"text": "Apakah compressor dan mesin las dalam keadaan baik dan digunakan dengan baik?"
+},
+{
+"text": "Apakah hand tools / perkakas dan special tool dalam kondisi baik dan digunakan dengan baik?"
+}
+]
+}
+]
+},
+{
+"jenis": "FORMULIR INSPEKSI INSTALASI PENANGKAL PETIR",
+"formType": "scoring",
+"formCode": "GTS-FR-SFT-05.07-34",
+"formTitle": "FORMULIR INSPEKSI INSTALASI PENANGKAL PETIR",
+"formSubtitle": "",
+"tanggalEfektif": "25 Maret 2024",
+"revisi": "0.0",
+"pointMax": 4,
+"items": [
+{
+"catTitle": "",
+"text": "Komponen sistem penangkal petir harus terpasang erat sempurna"
+},
+{
+"catTitle": "",
+"text": "Ground tertanam hingga mencapai kedalaman air tanah agar petir tersalur ke dalam tanah"
+},
+{
+"catTitle": "",
+"text": "Penangkal petir di bagian tertinggi dari bangunan"
+},
+{
+"catTitle": "",
+"text": "Semua jaringan perangkat mulai dari bagian kepala, rangkaian, hingga grounding penangkal petir sudah terpasang dengan benar"
+},
+{
+"catTitle": "",
+"text": "Pengukuran resistance dilakukan secara rutin"
+},
+{
+"catTitle": "",
+"text": "Timbulnya karat akibat adanya gas atau asap terutama untuk bagian atas dari instalasi"
+}
+]
+},
+{
+"jenis": "FORMULIR INSPEKSI RUMAH GENSET",
+"formType": "scoring",
+"formCode": "GTS-FR-SFT-05.07-24",
+"formTitle": "FORMULIR INSPEKSI RUMAH GENSET",
+"formSubtitle": "",
+"tanggalEfektif": "25 Maret 2024",
+"revisi": "0.0",
+"pointMax": 4,
+"items": [
+{
+"catTitle": "",
+"text": "Bangunan, dinding, dan atap kokoh"
+},
+{
+"catTitle": "",
+"text": "Pintu evakuasi tidak terhalang oleh bangunan apapun"
+},
+{
+"catTitle": "",
+"text": "Terdapat jarak pemisah / gang antara rumah genset dengan bangunan lain"
+},
+{
+"catTitle": "",
+"text": "Sistem sirkulasi gas buangan min 3 meter dari bangunan lain"
+},
+{
+"catTitle": "",
+"text": "Ventelasi & penerangan umum memadai"
+},
+{
+"catTitle": "",
+"text": "Terdapat exhaust fan"
+},
+{
+"catTitle": "",
+"text": "Cover panel tertutup"
+},
+{
+"catTitle": "",
+"text": "Terpasang tombol stop button"
+},
+{
+"catTitle": "",
+"text": "Sistem pengukuran pada peralatan listrik dan mesin berfungsi dengan baik"
+},
+{
+"catTitle": "",
+"text": "Terdapat gambar tata letak (lay out) peralatan utama"
+},
+{
+"catTitle": "",
+"text": "Terdapat perlengkpana/ alat pemadam kebakaran(APAR)"
+},
+{
+"catTitle": "",
+"text": "Terdapat penangkal petir"
+},
+{
+"catTitle": "",
+"text": "Tersedia APD (Ear muff)"
+},
+{
+"catTitle": "",
+"text": "Tingkat kebisingan <85 dB"
+},
+{
+"catTitle": "",
+"text": "Cerobong gas buang di arahkan ke luar bangunan"
+},
+{
+"catTitle": "",
+"text": "Terpasang jadwal PIC pembersihan oil trap"
+},
+{
+"catTitle": "",
+"text": "Penampungan air dan oil trap tidak tercemar oli/ minyak"
+},
+{
+"catTitle": "",
+"text": "Terdapat jalur evakuasi + panah evakuasi"
+},
+{
+"catTitle": "",
+"text": "Suhu ruangan stabil (≤ 32 ºC)"
+},
+{
+"catTitle": "",
+"text": "Pengisian fuel terpisah dengan genset"
+},
+{
+"catTitle": "",
+"text": "Terdapat sign buka tutup pada kran"
+},
+{
+"catTitle": "",
+"text": "Terdapat sign kelistrikan"
+},
+{
+"catTitle": "",
+"text": "Tersedia inspeksi pelebelan K3 yang standar"
+},
+{
+"catTitle": "",
+"text": "Tersedia sistim penggembokan loto"
+},
+{
+"catTitle": "",
+"text": "Tersedia lock-Out dan label danger tag"
+},
+{
+"catTitle": "",
+"text": "Cover Penutup Kompartemen"
+},
+{
+"catTitle": "",
+"text": "Apakah terdapat genangan minyak pada oil trap"
+}
+]
+},
+{
+"jenis": "FORMULIR INSPEKSI TOWER LAMP",
+"formType": "scoring",
+"formCode": "GTS-FR-SFT-05.07-37",
+"formTitle": "FORMULIR INSPEKSI TOWER LAMP",
+"formSubtitle": "",
+"tanggalEfektif": "25 Maret 2024",
+"revisi": "00:00",
+"pointMax": 4,
+"items": [
+{
+"catTitle": "",
+"text": "Kabel dalam kondisi baik, isolator tidak rusak, tidak cacat dan kabel tidak terbuka (ada faceplate)"
+},
+{
+"catTitle": "",
+"text": "Kabel tidak terpasang di permukaan dinding, lantai atau ditiang bangunan tanpa pengaman"
+},
+{
+"catTitle": "",
+"text": "Kondisi dan fungsi main circuit breaker baik"
+},
+{
+"catTitle": "",
+"text": "Kondisi dan kekencangan klem accu baik"
+},
+{
+"catTitle": "",
+"text": "Kondisi dan kekencangan V belt baik"
+},
+{
+"catTitle": "",
+"text": "Kondisi kipas radiator baik"
+},
+{
+"catTitle": "",
+"text": "Kotak di cat dengan warna jingga / orange"
+},
+{
+"catTitle": "",
+"text": "Lantai di bawah kotak distribusi listrik dicat clear area (kotak segiempat warna jingga/ orange dengan tepi garis putih selebar 5 cm)"
+},
+{
+"catTitle": "",
+"text": "Level air accu normal"
+},
+{
+"catTitle": "",
+"text": "Level air radiator normal"
+},
+{
+"catTitle": "",
+"text": "Level minyak tangki solar normal"
+},
+{
+"catTitle": "",
+"text": "Level oli mesin normal"
+},
+{
+"catTitle": "",
+"text": "Panel box dilengkapi dengan fasilitas loto dan danger tag"
+},
+{
+"catTitle": "",
+"text": "Pelabelan standar (label on/ off, nomor registrasi & cakupan area distribusi)"
+},
+{
+"catTitle": "",
+"text": "Posisi kotak distiubusi listrik (electrical distribution box)"
+},
+{
+"catTitle": "",
+"text": "Posisi saklar utama terletak didalam kotak distribusi dan mudah di akses"
+},
+{
+"catTitle": "",
+"text": "Saklar utama harus mudah diakses, meskipun pintu panel dalam keadaan terkunci (ada tali pemutus darurat (emergency stop wire)"
+},
+{
+"catTitle": "",
+"text": "Terpasang kartu inspeksi (KIP)"
+},
+{
+"catTitle": "",
+"text": "Tidak terdapat kabel yang disambung dengan selotape tanpa connector dan kotak pengaman"
+},
+{
+"catTitle": "",
+"text": "Kondisi Lisfting Tower Lamp baik (Dapat dinaikan & diturunkan)"
+}
+]
+},
+{
+"jenis": "FORMULIR INSPEKSI UMUM TERENCANA BANGUNAN FASILITAS UMUM",
+"formType": "scoring",
+"formCode": "GTS-FR-SFT-05.07-21",
+"formTitle": "FORMULIR INSPEKSI UMUM TERENCANA BANGUNAN FASILITAS UMUM",
+"formSubtitle": "",
+"tanggalEfektif": "25 Maret 2024",
+"revisi": "0.0",
+"pointMax": 4,
+"items": [
+{
+"catTitle": "",
+"text": "Atap, dinding, pintu, jendela dalam kondisi bersih, baik dan tidak rusak."
+},
+{
+"catTitle": "",
+"text": "Toilet / kamar mandi umum terpelihara, dan dibersihkan secara rutin."
+},
+{
+"catTitle": "",
+"text": "Permukaan lantai dan gang untuk berjalan bersih dan tidak licin."
+},
+{
+"catTitle": "",
+"text": "Penerangan (buatan / alami) memadai, tidak kurang atau tidak silau."
+},
+{
+"catTitle": "",
+"text": "Ventilasi (buatan / alami) memadai."
+},
+{
+"catTitle": "",
+"text": "Penyimpanan rapi, diatas rak, dan untuk penumpukan dilantai di dalam garis demarkasi."
+},
+{
+"catTitle": "",
+"text": "Housekeeping dan kebersihan di area sekitar bangunan memadai."
+},
+{
+"catTitle": "",
+"text": "Penumpukan di halaman (yard) rapi, di area demarkasi, dan ada gang."
+},
+{
+"catTitle": "",
+"text": "Halaman parkir rata, bersih, luas dan semua kendaraan parkir mundur."
+},
+{
+"catTitle": "",
+"text": "Tempat sampah cukup dan dikosongkan secara rutin."
+},
+{
+"catTitle": "",
+"text": "Peralatan khusus dalam kondisi baik dan diinspeksi secara rutin"
+},
+{
+"catTitle": "",
+"text": "Terdapat Penempatan khusus untuk B3 dan dilengkapi label"
+},
+{
+"catTitle": "",
+"text": "Instalasi listrik, saklar, kabel dalam kondisi baik dan aman."
+},
+{
+"catTitle": "",
+"text": "Semua tangga dalam kondisi baik, kode warna standar dan ada KIP."
+},
+{
+"catTitle": "",
+"text": "Semua furniture (lemari, kursi, meja, dll) bersih dan ergonomis."
+},
+{
+"catTitle": "",
+"text": "Rambu, tanda K3LH dan kode warna cukup dan sesuai standar."
+},
+{
+"catTitle": "",
+"text": "Semua karyawan memakai APD sesuai standar."
+},
+{
+"catTitle": "",
+"text": "Alat dan instalasi pemadam kebakaran memadai dan diinspeksi rutin."
+},
+{
+"catTitle": "",
+"text": "Dilengkapi dengan alarm emergency dan tempat berkumpul darurat."
+},
+{
+"catTitle": "",
+"text": "Emergency Lamp dalam kondisi baik"
+},
+{
+"catTitle": "",
+"text": "Penempatan bejana bertekanan sesuai standard"
+},
+{
+"catTitle": "",
+"text": "Bangunan dilengkapi layout dan PIC Area"
+}
+]
+},
+{
+"jenis": "FORMULIR INSPEKSI UMUM TERENCANA KANTOR & GUDANG",
+"formType": "scoring",
+"formCode": "TBP-FR-SFT-05.07-44",
+"formTitle": "FORMULIR INSPEKSI UMUM TERENCANA KANTOR & GUDANG",
+"formSubtitle": "",
+"tanggalEfektif": "25 Maret 2024",
+"revisi": "0.1",
+"pointMax": 4,
+"items": [
+{
+"catTitle": "",
+"text": "Atap, dinding, pintu, jendela dalam kondisi bersih, baik dan tidak rusak."
+},
+{
+"catTitle": "",
+"text": "Toilet / kamar mandi umum terpelihara, dan dibersihkan secara rutin."
+},
+{
+"catTitle": "",
+"text": "Permukaan lantai dan gang untuk berjalan bersih dan tidak licin."
+},
+{
+"catTitle": "",
+"text": "Penerangan (buatan / alami) memadai, tidak kurang atau tidak silau."
+},
+{
+"catTitle": "",
+"text": "Ventilasi (buatan / alami) memadai."
+},
+{
+"catTitle": "",
+"text": "Penyimpanan rapi, diatas rak, dan untuk penumpukan dilantai di dalam garis demarkasi."
+},
+{
+"catTitle": "",
+"text": "Housekeeping dan kebersihan di area sekitar bangunan memadai."
+},
+{
+"catTitle": "",
+"text": "Penumpukan di halaman (yard) rapi, di area demarkasi, dan ada gang."
+},
+{
+"catTitle": "",
+"text": "Halaman parkir rata, bersih, luas dan semua kendaraan parkir mundur."
+},
+{
+"catTitle": "",
+"text": "Tempat sampah cukup dan dikosongkan secara rutin."
+},
+{
+"catTitle": "",
+"text": "Instalasi listrik, saklar, kabel dalam kondisi baik dan aman."
+},
+{
+"catTitle": "",
+"text": "Semua tangga dalam kondisi baik, kode warna standar dan ada KIP."
+},
+{
+"catTitle": "",
+"text": "Penyimpanan tabung las berdiri, terikat, dipisahkan antara tabung kosong dan isi, dipisahkan antara tabung O2, N2, Acetilene."
+},
+{
+"catTitle": "",
+"text": "Lokasi dekat dengan klinik. Jika jauh dilengkapi dengan peralatan P3K."
+},
+{
+"catTitle": "",
+"text": "Penyimpanan bahan mudah terbakar sesuai standar dan terpisah dengan barang lainnya."
+},
+{
+"catTitle": "",
+"text": "Semua furniture (lemari, kursi, meja, dll) bersih dan ergonomis."
+},
+{
+"catTitle": "",
+"text": "Penyimpanan bahan B3 tersendiri dan dilengkapi MSDS."
+},
+{
+"catTitle": "",
+"text": "Rambu, tanda K3LH dan kode warna cukup dan sesuai standar."
+},
+{
+"catTitle": "",
+"text": "Semua karyawan memakai APD sesuai standar."
+},
+{
+"catTitle": "",
+"text": "Ada rambu \"Dilarang Masuk Selain Petugas\" di pintu ruang khusus."
+},
+{
+"catTitle": "",
+"text": "Alat dan instalasi pemadam kebakaran memadai dan diinspeksi rutin."
+},
+{
+"catTitle": "",
+"text": "Dilengkapi dengan alarm emergency dan tempat berkumpul darurat."
+}
+]
+},
+{
+"jenis": "FORMULIR INSPEKSI WORKING AT HEIGHT (BEKERJA DI KETINGGIAN)",
+"formType": "scoring",
+"formCode": "GTS-FR-SFT-05.07-29",
+"formTitle": "FORMULIR INSPEKSI WORKING AT HEIGHT (BEKERJA DI KETINGGIAN)",
+"formSubtitle": "",
+"tanggalEfektif": "25 Maret 2024",
+"revisi": "0.0",
+"pointMax": 4,
+"items": [
+{
+"catTitle": "Dokumen Kontrol",
+"text": "Tersedia JSA dibuat, di tandatangani, dipahami dan di sosialisasikan"
+},
+{
+"catTitle": "Dokumen Kontrol",
+"text": "Tersedia Work Permit dibuat, di tandatangani, dipahami dan di sosialisasikan"
+},
+{
+"catTitle": "Dokumen Kontrol",
+"text": "Pre Job Inspection dibuat, di tandatangani dan dipahami"
+},
+{
+"catTitle": "Pekerja",
+"text": "Semua pekerja sudah mendapatkan pelatihan tentang bekerja di ketinggian"
+},
+{
+"catTitle": "Pekerja",
+"text": "Briefing dilaksanakan sebelum bekerja dan absensi diisi"
+},
+{
+"catTitle": "Pekerja",
+"text": "Pengawas selalu ada di area kerja"
+},
+{
+"catTitle": "Pekerja",
+"text": "Komunikasi dua arah antara pekerja dan pengawas berjalan dengan baik"
+},
+{
+"catTitle": "Pekerja",
+"text": "Semua karyawan yang terlibat sudah disosialisasikan prosedur kerja aman"
+},
+{
+"catTitle": "Peralatan (Tools)",
+"text": "Lanyard terikat dengan benar dan kuat"
+},
+{
+"catTitle": "Peralatan (Tools)",
+"text": "Absorbent lanyards tersedia jika area kerja tidak ada handrail"
+},
+{
+"catTitle": "Peralatan (Tools)",
+"text": "APD (Helmet, Seragam dengan Reflektif Vest dan Safety Shoes) digunakan dengan benar"
+},
+{
+"catTitle": "Peralatan (Tools)",
+"text": "Safety Harness tersedia dan berfungsi dengan baik"
+},
+{
+"catTitle": "Peralatan (Tools)",
+"text": "Self Retracting lifeline berfungsi dengan baik"
+},
+{
+"catTitle": "Peralatan (Tools)",
+"text": "Sambungan Jangkar berfungsi dengan baik"
+},
+{
+"catTitle": "Peralatan (Tools)",
+"text": "Safety harness di kaitkan sama atau lebih tinggi dari bahu pekerja"
+},
+{
+"catTitle": "Peralatan (Tools)",
+"text": "Safety harness di kaitkan ditempat yang kuat dan kokoh dan dapat menahan 3 kali beban pekerja"
+},
+{
+"catTitle": "Peralatan (Tools)",
+"text": "Tangga / Scaffolding berfungsi dengan baik"
+},
+{
+"catTitle": "Peralatan (Tools)",
+"text": "Handrail dan pengaman berfungsi dengan baik"
+},
+{
+"catTitle": "Lingkungan",
+"text": "Area kerja telah diamankan dan di demarkasi"
+},
+{
+"catTitle": "Lingkungan",
+"text": "Emergency plan tersedia dan karyawan yang terlibat memahaminya"
+},
+{
+"catTitle": "Lingkungan",
+"text": "Rambu – rambu peringatan kejatuhan benda tersedia"
+},
+{
+"catTitle": "Lingkungan",
+"text": "Lantai kerja / platform bersih dan bebas dari benda / bahan lainnya"
+}
+]
+},
+{
+"jenis": "Prep-Lab: INSPEKSI UMUM TERENCANA DAN OBSERVASI TUGAS TERENCANA AREA GUDANG ARSIP SAMPEL LABORATORIUM",
+"formType": "preplab",
+"formCode": "GTS-FR-PL-LAB-05.07-03",
+"formTitle": "INSPEKSI UMUM TERENCANA DAN OBSERVASI TUGAS TERENCANA AREA GUDANG ARSIP SAMPEL LABORATORIUM",
+"formSubtitle": "",
+"tanggalEfektif": "06 Juli 2026",
+"revisi": "0.0",
+"items": [
+{
+"text": "Apakah atap, dinding, lantai, jendela dan pintu dalam kondisi bersih, baik dan tidak rusak?"
+},
+{
+"text": "Apakah permukaan lantai untuk berjalan, bersih, tidak licin dan bebas hambatan?"
+},
+{
+"text": "Apakah penerangannya cukup dan semua menyala?"
+},
+{
+"text": "Apakah instalasi listrik, saklar, kabel dalam kondisi baik dan aman?"
+},
+{
+"text": "Apakah kapasitas gudang masih memadai?"
+},
+{
+"text": "Apakah rak penyimpanan dalam kondisi bersih, baik dan tidak rusak?"
+},
+{
+"text": "Apakah ventilasi udara memadai dan masih berfungsi dengan baik?"
+},
+{
+"text": "Apakah box arsip tersusun rapi?"
+},
+{
+"text": "Apakah box arsip diberi label?"
+},
+{
+"text": "Apakah kemasan/box arsip masih layak/tidak rusak?"
+},
+{
+"text": "Arsip periode (bulan/tahun) berapa yang tersimpan?"
+},
+{
+"text": "Kapan terakhir arsip dibuang/dimusnahkan?"
+},
+{
+"text": "Apakah kondisi arsip masih layak/tidak rusak?"
+},
+{
+"text": "Apakah log book arsip tersedia?"
+},
+{
+"text": "Apakah jalan masuk terbatas/pintu dikunci?"
+},
+{
+"text": "Apakah terdapat hama seperti tikus atau rayap?"
+}
+],
+"hasTools": true
+},
+{
+"jenis": "Prep-Lab: INSPEKSI UMUM TERENCANA DAN OBSERVASI TUGAS TERENCANA AREA GUDANG ARSIP SAMPEL PREPARASI",
+"formType": "preplab",
+"formCode": "GTS-FR-PL-PREP-05.07-005",
+"formTitle": "INSPEKSI UMUM TERENCANA DAN OBSERVASI TUGAS TERENCANA AREA GUDANG ARSIP SAMPEL PREPARASI",
+"formSubtitle": "",
+"tanggalEfektif": "06 Juli 2026",
+"revisi": "0.0",
+"items": [
+{
+"text": "Apakah atap, dinding, lantai, jendela dan pintu dalam kondisi bersih, baik dan tidak rusak?"
+},
+{
+"text": "Apakah permukaan lantai untuk berjalan, bersih, tidak licin dan bebas hambatan?"
+},
+{
+"text": "Apakah penerangannya cukup dan semua menyala?"
+},
+{
+"text": "Apakah instalasi listrik, saklar, kabel dalam kondisi baik dan aman?"
+},
+{
+"text": "Apakah kapasitas gudang masih memadai?"
+},
+{
+"text": "Apakah rak penyimpanan dalam kondisi bersih, baik dan tidak rusak?"
+},
+{
+"text": "Apakah ventilasi udara memadai dan masih berfungsi dengan baik?"
+},
+{
+"text": "Apakah box arsip tersusun rapi?"
+},
+{
+"text": "Apakah box arsip diberi label?"
+},
+{
+"text": "Apakah kemasan/box arsip masih layak/tidak rusak?"
+},
+{
+"text": "Arsip periode (bulan/tahun) berapa yang tersimpan?"
+},
+{
+"text": "Kapan terakhir arsip dibuang/dimusnahkan?"
+},
+{
+"text": "Apakah kondisi arsip masih layak/tidak rusak?"
+},
+{
+"text": "Apakah log book arsip tersedia?"
+},
+{
+"text": "Apakah jalan masuk terbatas/pintu dikunci?"
+},
+{
+"text": "Apakah terdapat hama seperti tikus atau rayap?"
+}
+],
+"hasTools": true
+},
+{
+"jenis": "Prep-Lab: INSPEKSI UMUM TERENCANA DAN OBSERVASI TUGAS TERENCANA AREA GUDANG LABORATORIUM",
+"formType": "preplab",
+"formCode": "GTS-FR-PL-LAB-05.07-02",
+"formTitle": "INSPEKSI UMUM TERENCANA DAN OBSERVASI TUGAS TERENCANA AREA GUDANG LABORATORIUM",
+"formSubtitle": "",
+"tanggalEfektif": "06 Juli 2026",
+"revisi": "0.0",
+"items": [
+{
+"text": "Apakah atap, dinding, lantai, jendela dan pintu dalam kondisi bersih, baik dan tidak rusak?"
+},
+{
+"text": "Apakah permukaan lantai untuk berjalan, bersih, tidak licin dan bebas hambatan?"
+},
+{
+"text": "Apakah penerangannya cukup dan semua menyala?"
+},
+{
+"text": "Apakah instalasi listrik, saklar, kabel dalam kondisi baik dan aman?"
+},
+{
+"text": "Apakah kapasitas gudang masih memadai?"
+},
+{
+"text": "Apakah rak penyimpanan dalam kondisi bersih, baik dan tidak rusak?"
+},
+{
+"text": "Apakah ventilasi udara memadai dan masih berfungsi dengan baik?"
+},
+{
+"text": "Apakah barang-barang tersusun rapi?"
+},
+{
+"text": "Apakah barang-barang diberi label?"
+},
+{
+"text": "Apakah kemasan barang-barang masih layak/tidak rusak?"
+},
+{
+"text": "Apakah kondisi barang-barang masih layak/tidak rusak?"
+},
+{
+"text": "Apakah log book gudang tersedia?"
+},
+{
+"text": "Apakah jalan masuk terbatas/pintu dikunci?"
+},
+{
+"text": "Apakah terdapat hama seperti tikus atau rayap?"
+}
+],
+"hasTools": true
+},
+{
+"jenis": "Prep-Lab: INSPEKSI UMUM TERENCANA DAN OBSERVASI TUGAS TERENCANA AREA KERJA GUDANG PREPARASI",
+"formType": "preplab",
+"formCode": "GTS-FR-PL-PREP-05.07-04",
+"formTitle": "INSPEKSI UMUM TERENCANA DAN OBSERVASI TUGAS TERENCANA AREA KERJA GUDANG PREPARASI",
+"formSubtitle": "",
+"tanggalEfektif": "06 Juli 2026",
+"revisi": "0.0",
+"items": [
+{
+"text": "Apakah atap, dinding, lantai, jendela dan pintu dalam kondisi bersih, baik dan tidak rusak?"
+},
+{
+"text": "Apakah permukaan lantai untuk berjalan, bersih, tidak licin dan bebas hambatan?"
+},
+{
+"text": "Apakah penerangannya cukup dan semua menyala?"
+},
+{
+"text": "Apakah instalasi listrik, saklar, kabel dalam kondisi baik dan aman?"
+},
+{
+"text": "Apakah kapasitas gudang masih memadai?"
+},
+{
+"text": "Apakah rak penyimpanan dalam kondisi bersih, baik dan tidak rusak?"
+},
+{
+"text": "Apakah ventilasi udara memadai dan masih berfungsi dengan baik?"
+},
+{
+"text": "Apakah barang-barang tersusun rapi?"
+},
+{
+"text": "Apakah barang-barang diberi label?"
+},
+{
+"text": "Apakah kemasan barang-barang masih layak/tidak rusak?"
+},
+{
+"text": "Apakah kondisi barang-barang masih layak/tidak rusak?"
+},
+{
+"text": "Apakah log book gudang tersedia?"
+},
+{
+"text": "Apakah jalan masuk terbatas/pintu dikunci?"
+},
+{
+"text": "Apakah terdapat hama seperti tikus atau rayap?"
+}
+],
+"hasTools": true
+},
+{
+"jenis": "Prep-Lab: INSPEKSI UMUM TERENCANA DAN OBSERVASI TUGAS TERENCANA AREA KERJA LABORATORIUM",
+"formType": "preplab",
+"formCode": "GTS-FR-PL-LAB-05.07-01",
+"formTitle": "INSPEKSI UMUM TERENCANA DAN OBSERVASI TUGAS TERENCANA AREA KERJA LABORATORIUM",
+"formSubtitle": "",
+"tanggalEfektif": "06 Juli 2026",
+"revisi": "0.0",
+"items": [
+{
+"text": "Apakah atap, dinding, pintu, jendela dalam kondisi bersih, baik dan tidak rusak?"
+},
+{
+"text": "Apakah toilet/kamar mandi umum terpelihara, dan dibersihkan secara rutin?"
+},
+{
+"text": "Apakah blower toilet berfungsi dengan baik?"
+},
+{
+"text": "Apakah tersedia sabun dan tercukupi jumlahnya?"
+},
+{
+"text": "Apakah tempat sampah tersedia dan dikosongkan secara rutin?"
+},
+{
+"text": "Apakah permukaan lantai area kerja untuk berjalan, bersih, tidak licin dan bebas hambatan?"
+},
+{
+"text": "Apakah penerangannya cukup dan semua menyala?"
+},
+{
+"text": "Apakah ventilasi udara atau AC memadai dan masih berfungsi dengan baik?"
+},
+{
+"text": "Apakah penyimpanan arsip box pulp, press powder, fusebead dan peralatan rapi?"
+},
+{
+"text": "Apakah instalasi listrik, saklar, kabel dalam kondisi baik dan aman?"
+},
+{
+"text": "Apakah di area kerja peralatan P3K masih layak, terupdate list serta PIC nya?"
+},
+{
+"text": "Apakah di area kerja peralatan spill kit masih layak, terupdate list nya?"
+},
+{
+"text": "Apakah lampu emergency berfungsi dengan baik?"
+},
+{
+"text": "Apakah semua furniture (lemari, kursi, meja, dll) bersih dan ergonomis?"
+},
+{
+"text": "Apakah rambu serta tanda K3LH sesuai standar baik pada peralatan maupun area kerja?"
+},
+{
+"text": "Apakah semua karyawan memakai APD yang sesuai?"
+},
+{
+"text": "Apakah alat pemadam kebakaran (APAR) memadai dan diinspeksi rutin?"
+},
+{
+"text": "Apakah Eyewash tersedia dan masih layak digunakan? (lihat tanggal penggantian)"
+},
+{
+"text": "Apakah area kerja terdapat denah jalur evakuasi?"
+},
+{
+"text": "Apakah area kerja terdapat tempat berkumpul darurat (muster point)?"
+},
+{
+"text": "Apakah saluran air/drainase di sekitar area kerja berfungsi dengan baik/tidak tersumbat?"
+},
+{
+"text": "Apakah log book kerja tersedia?"
+},
+{
+"text": "Apakah terpasang dokumentasi prosedur kerja?"
+},
+{
+"text": "Apakah penomoran/identitas pada alat/mesin tersedia dan masih layak?"
+},
+{
+"text": "Apakah pemeliharaan alat (harian) P2H peralatan rutin dilakukan?"
+},
+{
+"text": "Apakah bahan kimia dan limbah dilabel dengan baik?"
+},
+{
+"text": "Apakah penyimpanan tabung gas berdiri, terikat, dipisahkan antara tabung kosong/isi?"
+},
+{
+"text": "Apakah ada kebocoran pada selang dan regulator gas?"
+},
+{
+"text": "Apakah pengukuran radiasi pada XRF dilakukan?"
+},
+{
+"text": "Apakah verifikasi timbangan dilakukan?"
+},
+{
+"text": "Apakah verifikasi XRF dilakukan?"
+},
+{
+"text": "Apakah semua peralatan dalam kondisi baik (timbangan, mesin press, XRF, UPS, dll)?"
+},
+{
+"text": "Apakah semua komputer (PC) berfungsi dan kabel terjamin aman?"
+},
+{
+"text": "Apakah Alat Surveymeter Gamma masih dalam batas waktu penggunaan/belum?"
+},
+{
+"text": "Apakah stok tabung gas Helium dan Argon cukup?"
+},
+{
+"text": "Apakah Periode TLD Badge yang digunakan sesuai?"
+},
+{
+"text": "Apakah sample standard dan standard verifikasi dalam kondisi baik, tidak pecah?"
+},
+{
+"text": "Apakah silica gel dalam desiccator dan tempat penyimpanan standard sample masih layak?"
+},
+{
+"text": "Apakah compressor rutin dibuang airnya dan masih baik level olinya?"
+},
+{
+"text": "Apakah limbah B3 yang dihasilkan tercatat dengan baik?"
+},
+{
+"text": "Apakah tempat penampungan sementara limbah B3 masih layak digunakan dan diberi label?"
+},
+{
+"text": "Apakah rutin dilakukan pengecekan pH bak Scrubber?"
+},
+{
+"text": "Apakah rutin dilakukan pencatatan suhu dan kelembaban di ruang kerja tertentu?"
+},
+{
+"text": "Apakah tanaman rutin disiram dan terawat dengan baik?"
+},
+{
+"text": "Apakah halaman di sekitar area kerja bersih dan tidak ada sampah yang berserakan?"
+},
+{
+"text": "Apakah saluran air/drainase di sekitar area kerja berfungsi dengan baik/tidak tersumbat?"
+}
+],
+"hasTools": true
+},
+{
+"jenis": "Prep-Lab: INSPEKSI UMUM TERENCANA DAN OBSERVASI TUGAS TERENCANA AREA KERJA MAINTENANCE",
+"formType": "preplab",
+"formCode": "GTS-FR-PL-MTNC-05.07-02",
+"formTitle": "INSPEKSI UMUM TERENCANA DAN OBSERVASI TUGAS TERENCANA AREA KERJA MAINTENANCE",
+"formSubtitle": "",
+"tanggalEfektif": "06 Juli 2026",
+"revisi": "0.0",
+"items": [
+{
+"text": "Apakah atap, dinding, lantai, pintu, jendela dalam kondisi bersih, baik dan tidak rusak?"
+},
+{
+"text": "Apakah tempat sampah tersedia dan rutin dikosongkan?"
+},
+{
+"text": "Apakah permukaan lantai untuk berjalan, bersih, tidak licin dan bebas hambatan?"
+},
+{
+"text": "Apakah penerangannya cukup dan semua menyala?"
+},
+{
+"text": "Apakah ventilasi udara atau AC memadai dan masih berfungsi dengan baik?"
+},
+{
+"text": "Apakah rak penyimpanan peralatan rapi?"
+},
+{
+"text": "Apakah instalasi listrik, saklar, kabel dalam kondisi baik dan aman?"
+},
+{
+"text": "Apakah semua furniture (lemari, kursi, meja, dll) bersih dan ergonomis?"
+},
+{
+"text": "Apakah rambu serta tanda K3LH sesuai standar baik pada peralatan maupun area kerja?"
+},
+{
+"text": "Apakah semua karyawan memakai APD yang sesuai?"
+},
+{
+"text": "Apakah alat pemadam kebakaran (APAR) memadai dan diinspeksi rutin?"
+},
+{
+"text": "Apakah di area kerja peralatan spill kit masih layak, terupdate list nya?"
+},
+{
+"text": "Apakah area kerja terdapat tempat berkumpul darurat (muster point)?"
+},
+{
+"text": "Apakah log book kerja tersedia?"
+},
+{
+"text": "Apakah pemeliharaan alat peralatan rutin dilakukan?"
+},
+{
+"text": "Apakah semua tools dalam kondisi baik?"
+},
+{
+"text": "Apakah ada tumpahan oli untuk area kerja maintenance?"
+}
+],
+"hasTools": true
+},
+{
+"jenis": "Prep-Lab: INSPEKSI UMUM TERENCANA DAN OBSERVASI TUGAS TERENCANA AREA KERJA PREPARASI BASAH IUP",
+"formType": "preplab",
+"formCode": "GTS-FR-PL-PREP-05.07-01",
+"formTitle": "INSPEKSI UMUM TERENCANA DAN OBSERVASI TUGAS TERENCANA AREA KERJA PREPARASI BASAH IUP",
+"formSubtitle": "",
+"tanggalEfektif": "06 Juli 2026",
+"revisi": "0.0",
+"items": [
+{
+"text": "Apakah atap, dinding, lantai, pintu, jendela dalam kondisi bersih, baik dan tidak rusak?"
+},
+{
+"text": "Apakah toilet umum terpelihara, dan dibersihkan secara rutin?"
+},
+{
+"text": "Apakah blower toilet berfungsi dengan baik?"
+},
+{
+"text": "Apakah tersedia sabun dan tercukupi jumlahnya?"
+},
+{
+"text": "Apakah tempat sampah tersedia dan rutin dikosongkan?"
+},
+{
+"text": "Apakah permukaan lantai untuk berjalan, bersih, tidak licin dan bebas hambatan?"
+},
+{
+"text": "Apakah penerangannya cukup dan semua menyala?"
+},
+{
+"text": "Apakah ventilasi udara atau AC memadai dan masih berfungsi dengan baik?"
+},
+{
+"text": "Apakah rak penyimpanan arsip sampel dan peralatan rapi?"
+},
+{
+"text": "Apakah area drop point sample aman dan memadai?"
+},
+{
+"text": "Apakah instalasi listrik, saklar, kabel dalam kondisi baik dan aman?"
+},
+{
+"text": "Apakah di area kerja peralatan P3K masih layak, terupdate list serta PIC nya?"
+},
+{
+"text": "Apakah di area kerja peralatan spill kit masih layak, terupdate list nya?"
+},
+{
+"text": "Apakah semua furniture (lemari, kursi, meja, dll) bersih dan ergonomis?"
+},
+{
+"text": "Apakah rambu serta tanda K3LH sesuai standar baik pada peralatan maupun area kerja?"
+},
+{
+"text": "Apakah semua karyawan memakai APD yang sesuai?"
+},
+{
+"text": "Apakah alat pemadam kebakaran (APAR) memadai dan diinspeksi rutin?"
+},
+{
+"text": "Apakah Eyewash tersedia dan masih layak digunakan? (lihat tanggal penggantian)"
+},
+{
+"text": "Apakah area kerja terdapat denah jalur evakuasi?"
+},
+{
+"text": "Apakah area kerja terdapat tempat berkumpul darurat (muster point)?"
+},
+{
+"text": "Apakah log book kerja tersedia?"
+},
+{
+"text": "Apakah terpasang dokumentasi prosedur kerja?"
+},
+{
+"text": "Apakah penomoran/identitas pada alat/mesin tersedia dan masih layak?"
+},
+{
+"text": "Apakah pemeliharaan alat (harian) P2H peralatan rutin dilakukan?"
+},
+{
+"text": "Apakah semua peralatan dalam kondisi baik (timbangan, palu/martil, sekop, oven, jaw crusher, dll)?"
+},
+{
+"text": "Apakah bagian kondisi luar dan dalam peralatan bersih?"
+},
+{
+"text": "Apakah pada peralatan mekanik terpasang safety guard?"
+},
+{
+"text": "Apakah area pembuangan sampel reminder masih memadai, aman dan diberikan tanda?"
+},
+{
+"text": "Apakah area pencucian alat terjaga kebersihannya dan tidak ada genangan air?"
+},
+{
+"text": "Apakah tandon air minum baik kondisinya, bersih dan rutin terisi?"
+},
+{
+"text": "Apakah tanaman rutin disiram dan terawat dengan baik?"
+},
+{
+"text": "Apakah halaman di sekitar area kerja bersih dan tidak ada sampah yang berserakan?"
+},
+{
+"text": "Apakah saluran air/drainase di sekitar area kerja berfungsi dengan baik/tidak tersumbat?"
+}
+],
+"hasTools": true
+},
+{
+"jenis": "Prep-Lab: INSPEKSI UMUM TERENCANA DAN OBSERVASI TUGAS TERENCANA AREA KERJA PREPARASI BASAH LOGPOND",
+"formType": "preplab",
+"formCode": "GTS-FR-PL-PREP-05.07-02",
+"formTitle": "INSPEKSI UMUM TERENCANA DAN OBSERVASI TUGAS TERENCANA AREA KERJA PREPARASI BASAH LOGPOND",
+"formSubtitle": "",
+"tanggalEfektif": "06 Juli 2026",
+"revisi": "0.0",
+"items": [
+{
+"text": "Apakah atap, dinding, lantai, pintu, jendela dalam kondisi bersih, baik dan tidak rusak?"
+},
+{
+"text": "Apakah toilet portabel terpelihara, dan dibersihkan secara rutin?"
+},
+{
+"text": "Apakah blower toilet berfungsi dengan baik?"
+},
+{
+"text": "Apakah tersedia sabun dan tercukupi jumlahnya?"
+},
+{
+"text": "Apakah tempat sampah tersedia dan rutin dikosongkan?"
+},
+{
+"text": "Apakah permukaan lantai untuk berjalan, bersih, tidak licin dan bebas hambatan?"
+},
+{
+"text": "Apakah penerangannya cukup dan semua menyala?"
+},
+{
+"text": "Apakah ventilasi udara memadai dan masih berfungsi dengan baik?"
+},
+{
+"text": "Apakah penyimpanan arsip sampel dan peralatan rapi?"
+},
+{
+"text": "Apakah area drop point sample aman dan memadai?"
+},
+{
+"text": "Apakah instalasi listrik, saklar, kabel dalam kondisi baik dan aman?"
+},
+{
+"text": "Apakah di area kerja kotak dan isi P3K masih layak, terupdate list serta PIC nya?"
+},
+{
+"text": "Apakah semua furniture (lemari, kursi, meja, dll) bersih dan ergonomis?"
+},
+{
+"text": "Apakah rambu serta tanda K3LH sesuai standar baik pada peralatan maupun area kerja?"
+},
+{
+"text": "Apakah semua karyawan memakai APD yang sesuai?"
+},
+{
+"text": "Apakah alat pemadam kebakaran (APAR) memadai dan diinspeksi rutin?"
+},
+{
+"text": "Apakah Eyewash tersedia dan masih layak digunakan? (lihat tanggal penggantian)"
+},
+{
+"text": "Apakah area kerja terdapat denah jalur evakuasi?"
+},
+{
+"text": "Apakah area kerja terdapat tempat berkumpul darurat (muster point)?"
+},
+{
+"text": "Apakah log book kerja tersedia?"
+},
+{
+"text": "Apakah terpasang dokumentasi prosedur kerja di area kerja?"
+},
+{
+"text": "Apakah penomoran/identitas pada alat/mesin tersedia dan masih layak?"
+},
+{
+"text": "Apakah pemeliharaan alat (harian) P2H peralatan rutin dilakukan?"
+},
+{
+"text": "Apakah semua peralatan dalam kondisi baik (timbangan, palu/martil, sekop, workbench, jaw crusher, dll)?"
+},
+{
+"text": "Apakah bagian kondisi luar dan dalam peralatan bersih?"
+},
+{
+"text": "Apakah pada peralatan mekanik terpasang safety guard?"
+},
+{
+"text": "Apakah area pembuangan sampel reminder masih memadai, aman dan diberikan tanda?"
+},
+{
+"text": "Apakah area pencucian alat terjaga kebersihannya dan tidak ada genangan air?"
+},
+{
+"text": "Apakah tandon air minum dan sumber air bersih tersedia, bersih dan rutin terisi/mengalir?"
+},
+{
+"text": "Apakah halaman di sekitar area kerja bersih dan tidak ada sampah yang berserakan?"
+},
+{
+"text": "Apakah saluran air/drainase di sekitar area kerja berfungsi dengan baik/tidak tersumbat?"
+}
+],
+"hasTools": true
+},
+{
+"jenis": "Prep-Lab: INSPEKSI UMUM TERENCANA DAN OBSERVASI TUGAS TERENCANA AREA KERJA PREPARASI KERING IUP",
+"formType": "preplab",
+"formCode": "GTS-FR-PL-PREP-05.07-03",
+"formTitle": "INSPEKSI UMUM TERENCANA DAN OBSERVASI TUGAS TERENCANA AREA KERJA PREPARASI KERING IUP",
+"formSubtitle": "",
+"tanggalEfektif": "06 Juli 2026",
+"revisi": "0.0",
+"items": [
+{
+"text": "Apakah atap, dinding, lantai, pintu, jendela dalam kondisi bersih, baik dan tidak rusak?"
+},
+{
+"text": "Apakah tempat sampah tersedia dan rutin dikosongkan?"
+},
+{
+"text": "Apakah toilet umum terpelihara, dan dibersihkan secara rutin?"
+},
+{
+"text": "Apakah blower toilet berfungsi dengan baik?"
+},
+{
+"text": "Apakah permukaan lantai untuk berjalan, bersih, tidak licin dan bebas hambatan?"
+},
+{
+"text": "Apakah penerangannya cukup dan semua menyala?"
+},
+{
+"text": "Apakah ventilasi udara memadai dan masih berfungsi dengan baik?"
+},
+{
+"text": "Apakah penyimpanan arsip sampel dan peralatan rapi?"
+},
+{
+"text": "Apakah halaman parkir aman dan memadai?"
+},
+{
+"text": "Apakah instalasi listrik, saklar, kabel dalam kondisi baik dan aman?"
+},
+{
+"text": "Apakah di area kerja peralatan P3K masih layak, terupdate list serta PIC nya?"
+},
+{
+"text": "Apakah di area kerja peralatan spill kit masih layak, terupdate list nya?"
+},
+{
+"text": "Apakah semua furniture (lemari, kursi, meja, dll) bersih dan ergonomis?"
+},
+{
+"text": "Apakah rambu serta tanda K3LH sesuai standar baik pada peralatan maupun area kerja?"
+},
+{
+"text": "Apakah semua karyawan memakai APD yang sesuai?"
+},
+{
+"text": "Apakah alat pemadam kebakaran (APAR) memadai dan diinspeksi rutin?"
+},
+{
+"text": "Apakah Eyewash tersedia dan masih layak digunakan? (lihat tanggal penggantian)"
+},
+{
+"text": "Apakah area kerja terdapat denah jalur evakuasi?"
+},
+{
+"text": "Apakah area kerja terdapat tempat berkumpul darurat (muster point)?"
+},
+{
+"text": "Apakah log book kerja tersedia?"
+},
+{
+"text": "Apakah terpasang dokumentasi prosedur kerja?"
+},
+{
+"text": "Apakah penomoran/identitas pada alat/mesin tersedia dan masih layak?"
+},
+{
+"text": "Apakah pemeliharaan alat (harian) P2H peralatan rutin dilakukan?"
+},
+{
+"text": "Apakah semua peralatan dalam kondisi baik (timbangan, oven, pulverizer, double roll, jaw crusher, dll)?"
+},
+{
+"text": "Apakah bagian kondisi luar dan dalam peralatan bersih?"
+},
+{
+"text": "Apakah pada peralatan mekanik terpasang safety guard?"
+},
+{
+"text": "Apakah verifikasi timbangan dilakukan?"
+},
+{
+"text": "Apakah compressor rutin dibuang airnya dan masih baik level olinya?"
+},
+{
+"text": "Apakah tanaman rutin disiram dan terawat dengan baik?"
+},
+{
+"text": "Apakah halaman di sekitar area kerja bersih dan tidak ada sampah yang berserakan?"
+},
+{
+"text": "Apakah saluran air/drainase di sekitar area kerja berfungsi dengan baik/tidak tersumbat?"
+}
+],
+"hasTools": true
+},
+{
+"jenis": "Prep-Lab: INSPEKSI UMUM TERENCANA DAN OBSERVASI TUGAS TERENCANA GUDANG CHEMICAL",
+"formType": "preplab",
+"formCode": "GTS-FR-PL-LAB-05.07-04",
+"formTitle": "INSPEKSI UMUM TERENCANA DAN OBSERVASI TUGAS TERENCANA GUDANG CHEMICAL",
+"formSubtitle": "",
+"tanggalEfektif": "06 Juli 2026",
+"revisi": "0.0",
+"items": [
+{
+"text": "Apakah atap, dinding, lantai dan pintu dalam kondisi bersih, baik dan tidak rusak?"
+},
+{
+"text": "Apakah permukaan lantai untuk berjalan, bersih, tidak licin dan bebas hambatan?"
+},
+{
+"text": "Apakah penerangannya cukup dan semua menyala?"
+},
+{
+"text": "Apakah instalasi listrik, saklar, kabel dalam kondisi baik dan aman?"
+},
+{
+"text": "Apakah kapasitas gudang masih memadai?"
+},
+{
+"text": "Apakah lemari dan rak penyimpanan dalam kondisi bersih, baik dan tidak rusak?"
+},
+{
+"text": "Apakah ventilasi udara atau AC memadai dan masih berfungsi dengan baik?"
+},
+{
+"text": "Apakah bahan kimia tersusun rapi?"
+},
+{
+"text": "Apakah bahan kimia diberi label, simbol yang sesuai?"
+},
+{
+"text": "Apakah tersedia daftar bahan kimia dan dilengkapi MSDS?"
+},
+{
+"text": "Apakah kemasan bahan kimia masih layak/tidak rusak?"
+},
+{
+"text": "Apakah kondisi bahan kimia masih layak/belum expired?"
+},
+{
+"text": "Apakah bahan kimia mudah terbakar di simpan dengan baik dan aman?"
+},
+{
+"text": "Apakah jalan masuk terbatas/pintu dikunci?"
+},
+{
+"text": "Apakah di area kerja peralatan spill kit masih layak, terupdate listnya?"
+},
+{
+"text": "Apakah terdapat hama seperti tikus, rayap dll?"
+}
+],
+"hasTools": true
+},
+{
+"jenis": "Prep-Lab: PENGELOLAAN PERKAKAS TANGAN PORTABEL / HAND TOOLS",
+"formType": "preplab",
+"formCode": "GTS-FR-PL-MTNC-05.07-01",
+"formTitle": "PENGELOLAAN PERKAKAS TANGAN PORTABEL / HAND TOOLS",
+"formSubtitle": "",
+"tanggalEfektif": "06 Juli 2026",
+"revisi": "0.0",
+"items": [],
+"hasTools": true
+},
+{
+"jenis": "Inspeksi KEPATUHAN ALAT PELINDUNG DIRI",
+"formType": "table",
+"formCode": "GTS-FR-SFT-05.07-11",
+"formTitle": "KEPATUHAN ALAT PELINDUNG DIRI",
+"formSubtitle": "",
+"tanggalEfektif": "25 Maret 2024",
+"revisi": "0.0",
+"columns": [
+{
+"key": "nama",
+"label": "NAMA"
+},
+{
+"key": "jabatan",
+"label": "JABATAN"
+},
+{
+"key": "departemen",
+"label": "DEPARTEMEN"
+},
+{
+"key": "seragamRompi",
+"label": "SERAGAM/ROMPI"
+},
+{
+"key": "helm",
+"label": "HELM"
+},
+{
+"key": "sepatu",
+"label": "SEPATU"
+},
+{
+"key": "kacamata",
+"label": "KACAMATA"
+},
+{
+"key": "minePermit",
+"label": "MINE PERMIT"
+},
+{
+"key": "keterangan",
+"label": "KETERANGAN"
+}
+]
+},
+{
+"jenis": "Inspeksi KEPATUHAN KECEPATAN",
+"formType": "table",
+"formCode": "GTS-FR-SFT-05.07-08",
+"formTitle": "KEPATUHAN KECEPATAN",
+"formSubtitle": "",
+"tanggalEfektif": "25 Maret 2024",
+"revisi": "0.0",
+"columns": [
+{
+"key": "lokasiPemantauan",
+"label": "LOKASI PEMANTAUAN"
+},
+{
+"key": "waktu",
+"label": "WAKTU"
+},
+{
+"key": "nomerUnit",
+"label": "NOMER UNIT (LV/LT/ST/MH/DT)"
+},
+{
+"key": "kecepatanMax",
+"label": "KECEPATAN MAX DIIZINKAN"
+},
+{
+"key": "kecepatanMuatan",
+"label": "MUATAN"
+},
+{
+"key": "kecepatanKosong",
+"label": "KOSONG"
+},
+{
+"key": "keterangan",
+"label": "KETERANGAN"
+}
+]
+},
+{
+"jenis": "Inspeksi KEPATUHAN PENGOPERASIAN UNIT",
+"formType": "table",
+"formCode": "GTS-FR-SFT-05.07-10",
+"formTitle": "KEPATUHAN PENGOPERASIAN UNIT",
+"formSubtitle": "",
+"tanggalEfektif": "25 Maret 2024",
+"revisi": "0.0",
+"columns": [
+{
+"key": "namaKaryawan",
+"label": "NAMA KARYAWAN"
+},
+{
+"key": "nomorUnit",
+"label": "NOMOR UNIT"
+},
+{
+"key": "departemen",
+"label": "DEPARTEMEN"
+},
+{
+"key": "p2h",
+"label": "P2H"
+},
+{
+"key": "simper",
+"label": "SIMPER"
+},
+{
+"key": "keterangan",
+"label": "KETERANGAN"
+}
+]
+}
+]
